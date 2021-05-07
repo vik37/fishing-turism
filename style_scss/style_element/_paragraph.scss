@@ -1,0 +1,8 @@
+p{
+    //font-size: 0.8rem;
+    font-size: map-get($fontSizeParagrapg, "desktop");
+    &::first-letter{
+        font-size: 1.8rem;
+        text-shadow: #0c30ff -1px -1px 2px;
+    }
+}

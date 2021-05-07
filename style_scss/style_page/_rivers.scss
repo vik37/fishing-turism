@@ -1,0 +1,12 @@
+.main-3{
+    @extend .main-2;
+    .rivers{
+        @extend .lakes;
+        &__cards{
+            @extend .lakes__cards;
+            &__img{
+                @extend .lakes__cards__img;
+            }
+        }
+    }
+}

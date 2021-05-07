@@ -1,0 +1,41 @@
+@mixin heading($font,$letter,$weight) {
+    font-size: $font;
+    letter-spacing: $letter;
+    font-weight: $weight;
+    font-family: $headingFontStyle;
+    text-shadow: rgb(17,210,135) 1px 1px 3px;
+}
+@mixin anchors($size, $letter, $color,$backgroundColor) {
+    font-size: $size;
+    letter-spacing: $letter;
+    color: $color;
+    background-color: $backgroundColor;
+    font-family:cursive;
+    border-right:3px solid $black;
+    border-left:3px solid $black;
+    margin: auto 0;
+    outline: 1px dotted $black;
+    text-decoration: none;
+}
+@function linear(){
+    $leftColor:desaturate($color: #d63e06, $amount: 60);
+    $rightColor:darken(#d6d606,30%);
+    @return linear-gradient($leftColor,$rightColor);
+}
+@mixin image($width,$height) {
+    width: $width;
+    height: $height;
+    margin-left: 10px;
+    margin-top: 5px;
+    outline: 4px double $black;   
+}
+@mixin legend($bg-color, 
+               $radius,$color) {   
+    background-color: $bg-color;
+    color: $color;
+    border-radius: $radius;
+    border:3px solid rgb(17,210,135);
+    font-size: 14px;
+    width: 80vw;
+    text-align: center;
+}

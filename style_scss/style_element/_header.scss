@@ -1,0 +1,47 @@
+header{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $black;
+    padding-left: $navPadding;
+    padding-right: $navPadding;
+    background: linear();
+    .nav{
+        margin-bottom: 10px;  
+        background-color: #996618; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 4px;
+        box-shadow: #ede28a 10px 5px 40px inset;
+        &__navbar{
+            @include anchors(18px,1.2px,#0013e6,rgba(230, 0, 199,0.4));
+            border-radius: 10px;           
+            &:hover{
+                @include anchors(17px,0.6px,$white,rgba(152, 2, 221, 0.9));
+                filter: grayscale(70%);
+            }
+        }           
+    }
+    .title{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    h1{
+        @include heading(2.3rem,3px,bolder);
+        text-align: center;
+        color: $white;
+    }
+    .logo{
+        border: 1px dashed black;
+        width: 90px;
+        height: 40px;
+        background-image: url('../../images/sticker-fish.png');
+        background-position: center;
+        background-size: 65px;
+        background-repeat: no-repeat;
+        background-color:$white;
+        border-radius: 20px;
+        filter: drop-shadow(1px 1px 10px rgb(255, 255, 255));
+    }
+}
+

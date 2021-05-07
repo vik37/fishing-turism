@@ -1,0 +1,30 @@
+*, ::after, ::before {
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+html,body{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+// Style base scss
+@import './style_base/variable';
+@import './style_base/function';
+
+// Style elements scss
+@import './style_element/paragraph';
+@import './style_element/radio';
+@import './style_element/button';
+@import './style_element/header';
+@import './style_element/mapImg';
+@import './style_element/card';
+@import './style_element/footer';
+
+// Style pages scss
+@import './style_page/home';
+@import './style_page/lakes';
+@import './style_page/rivers';
+
+// Media queries in style base scss
+@import './style_base/media';

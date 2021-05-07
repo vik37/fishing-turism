@@ -1,0 +1,78 @@
+.main-2{
+    background-color: azure;
+    padding: 0 30px;   
+    margin-bottom: 10px;
+    fieldset{
+        border: 1px solid $black;
+        padding: 0 20px;
+        margin-bottom: 10px;       
+        display: flex;
+        justify-content:space-between;
+        legend::before{
+            content: 'Choice: ';
+            background-color: lighten(#101110, 70%);
+            color: rgb(8, 74, 173);
+            font-weight: 800;
+            padding-right: 2px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        legend{
+            @include legend($black,10px,$white);
+            text-decoration: underline;
+        }               
+    }
+    h2{
+        @include heading(32px,2px,800);
+        text-align: center;
+        background-color: rgba($black, 0.20);
+        padding-top: 8px;
+        border: 3px solid $white;
+        outline: 1px solid $black;
+      }
+    .lakes{         
+        display: flex;   
+        flex-wrap: wrap;
+        flex-direction: row;   
+        justify-content: space-between;    
+            
+        &__cards{
+            background-color: rgb(182, 18, 141);
+            width: 350px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+            outline: 2px  solid rgba(#eb3508, 0.60);
+            outline-offset: 5px;
+            box-shadow:2px 2px 25px lighten(rgb(182, 18, 141), 2%);
+            &__img{
+                @include image(300px,300px);
+            }
+            h3{
+                @include heading(36px,0,bolder);
+                background-color:darken(#ca0606, 20%);
+                color: lighten( #d41f1f, 40%);
+                width: 60px;
+                border-bottom: 5px solid $black;
+                border-right: 5px solid $black;
+                outline: 2px inset $white;      
+                margin-bottom: 5px;         
+            }
+            h4{
+                @include heading(30px,0,bolder);
+                
+            }
+            & > p{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 15px;
+                font-weight: 500;
+                text-shadow: $white 1px 1px 3px;
+            }
+            & > p::first-letter{
+                font-size: 0.8rem;
+                color: rgb(248, 228, 228);
+            }          
+        }
+    } 
+}

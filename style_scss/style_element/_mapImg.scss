@@ -1,0 +1,13 @@
+.map{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 25px;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    outline: groove $white;
+    &__img{
+        width: $imgMap;
+        filter: invert(80%);
+        border-radius: 20px;
+    }
+}

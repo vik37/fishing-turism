@@ -1,0 +1,519 @@
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+}
+
+p::first-letter {
+  font-size: 1.8rem;
+  text-shadow: #0c30ff -1px -1px 2px;
+}
+
+.radio {
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 5px 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 1px;
+  cursor: pointer;
+  -webkit-box-shadow: yellowgreen 2px 2px 20px;
+          box-shadow: yellowgreen 2px 2px 20px;
+  -webkit-transition: border 0.3s, -webkit-box-shadow 0.1s;
+  transition: border 0.3s, -webkit-box-shadow 0.1s;
+  transition: border 0.3s, box-shadow 0.1s;
+  transition: border 0.3s, box-shadow 0.1s, -webkit-box-shadow 0.1s;
+  outline: 2px double rgba(0, 0, 0, 0.1);
+}
+
+.radio__input {
+  display: none;
+}
+
+.radio:active {
+  -webkit-box-shadow: black 2px 2px 10px;
+          box-shadow: black 2px 2px 10px;
+  border-width: 3px;
+  outline: 2px double black;
+}
+
+.radio::before {
+  content: '';
+  width: 26px;
+  height: 26px;
+  background-color: brown;
+  border: 3px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.radio__span__natural {
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 4px;
+  -webkit-transition: border-width 1s;
+  transition: border-width 1s;
+  color: white;
+}
+
+.radio__span__natural:active {
+  border-width: 6px;
+}
+
+.radio__span__artif {
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  background-color: blue;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: 4px;
+  display: none;
+  -webkit-transition: border-width 1s;
+  transition: border-width 1s;
+  color: yellow;
+  font-size: 20px;
+  text-align: end;
+}
+
+.radio__span__artif:active {
+  border-width: 4px;
+}
+
+button {
+  background-color: #09942e;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px #ffffff;
+  letter-spacing: 1.3px;
+  width: 200px;
+  border: 2px double #87040d;
+  border-radius: 10px 10px 7px 7px;
+  -webkit-box-shadow: #2deaed 10px 10px 30px inset;
+          box-shadow: #2deaed 10px 10px 30px inset;
+  cursor: pointer;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#945c48), to(#414102));
+  background: linear-gradient(#945c48, #414102);
+}
+
+header .nav {
+  margin-bottom: 10px;
+  background-color: #996618;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 4px;
+  -webkit-box-shadow: #ede28a 10px 5px 40px inset;
+          box-shadow: #ede28a 10px 5px 40px inset;
+}
+
+header .nav__navbar {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #0013e6;
+  background-color: rgba(230, 0, 199, 0.4);
+  font-family: cursive;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+  margin: auto 0;
+  outline: 1px dotted #000000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+header .nav__navbar:hover {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  background-color: rgba(152, 2, 221, 0.9);
+  font-family: cursive;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+  margin: auto 0;
+  outline: 1px dotted #000000;
+  text-decoration: none;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+}
+
+header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .logo {
+  border: 1px dashed black;
+  width: 90px;
+  height: 40px;
+  background-image: url("../../images/sticker-fish.png");
+  background-position: center;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(1px 1px 10px white);
+          filter: drop-shadow(1px 1px 10px white);
+}
+
+.map {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  outline: groove #ffffff;
+}
+
+.map__img {
+  width: 95vw;
+  -webkit-filter: invert(80%);
+          filter: invert(80%);
+  border-radius: 20px;
+}
+
+.card {
+  width: 450px;
+  height: 650px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  padding: 10px 15px;
+}
+
+.card div .card__img {
+  width: 400px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 5px;
+  outline: 4px double #000000;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+footer h6 {
+  font-size: 1.2rem;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+  text-shadow: tomato 0 1px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-2, .main-3 {
+  background-color: azure;
+  padding: 0 30px;
+  margin-bottom: 10px;
+}
+
+.main-2 fieldset, .main-3 fieldset {
+  border: 1px solid #000000;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-2 fieldset legend::before, .main-3 fieldset legend::before {
+  content: 'Choice: ';
+  background-color: #c1c5c1;
+  color: #084aad;
+  font-weight: 800;
+  padding-right: 2px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.main-2 fieldset legend, .main-3 fieldset legend {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 3px solid #11d287;
+  font-size: 14px;
+  width: 80vw;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.main-2 h2, .main-3 h2 {
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-top: 8px;
+  border: 3px solid #ffffff;
+  outline: 1px solid #000000;
+}
+
+.main-2 .lakes, .main-3 .lakes, .main-3 .rivers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-2 .lakes__cards, .main-3 .lakes__cards, .main-3 .rivers__cards {
+  background-color: #b6128d;
+  width: 350px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  outline: 2px solid rgba(235, 53, 8, 0.6);
+  outline-offset: 5px;
+  -webkit-box-shadow: 2px 2px 25px #bf1394;
+          box-shadow: 2px 2px 25px #bf1394;
+}
+
+.main-2 .lakes__cards__img, .main-3 .lakes__cards__img, .main-3 .rivers__cards__img {
+  width: 300px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 5px;
+  outline: 4px double #000000;
+}
+
+.main-2 .lakes__cards h3, .main-3 .lakes__cards h3, .main-3 .rivers__cards h3 {
+  font-size: 36px;
+  letter-spacing: 0;
+  font-weight: bolder;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+  background-color: #670303;
+  color: #f7c8c8;
+  width: 60px;
+  border-bottom: 5px solid #000000;
+  border-right: 5px solid #000000;
+  outline: 2px inset #ffffff;
+  margin-bottom: 5px;
+}
+
+.main-2 .lakes__cards h4, .main-3 .lakes__cards h4, .main-3 .rivers__cards h4 {
+  font-size: 30px;
+  letter-spacing: 0;
+  font-weight: bolder;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+}
+
+.main-2 .lakes__cards > p, .main-3 .lakes__cards > p, .main-3 .main-2 .rivers__cards > p, .main-3 .rivers__cards > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: 500;
+  text-shadow: #ffffff 1px 1px 3px;
+}
+
+.main-2 .lakes__cards > p::first-letter, .main-3 .lakes__cards > p::first-letter, .main-3 .main-2 .rivers__cards > p::first-letter, .main-3 .rivers__cards > p::first-letter {
+  font-size: 0.8rem;
+  color: #f8e4e4;
+}
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2rem;
+    letter-spacing: 2.4px;
+    font-weight: 900;
+    font-family: "Josefin Slab", serif;
+    text-shadow: #11d287 1px 1px 3px;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  .map {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    font-family: "Josefin Slab", serif;
+    text-shadow: #11d287 1px 1px 3px;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .map {
+    margin-left: 10px;
+  }
+  .card {
+    height: 520px;
+  }
+}
+
+@media (max-width: 490px) {
+  body {
+    background-color: #000000;
+  }
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 25px;
+  }
+  header h1 {
+    font-size: 1.2rem;
+    letter-spacing: 1.6px;
+    font-weight: 600;
+    font-family: "Josefin Slab", serif;
+    text-shadow: #11d287 1px 1px 3px;
+  }
+  header .logo {
+    display: none;
+  }
+  .map {
+    margin-left: 5px;
+  }
+  .map__img {
+    width: 94vw;
+  }
+  article {
+    display: none;
+  }
+  .main-2, .main-3 {
+    background-color: azure;
+    padding: 0 1px;
+  }
+  .main-2 .lakes__cards, .main-3 .lakes__cards, .main-3 .rivers__cards {
+    background-color: chartreuse;
+    width: 300px;
+  }
+  .main-2 .lakes__cards__img, .main-3 .lakes__cards__img, .main-3 .rivers__cards__img {
+    margin-left: -1px;
+    width: 270px;
+  }
+  h6 {
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  header .nav {
+    margin-bottom: 10px;
+    height: 30px;
+  }
+  header .nav__navbar {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    color: #0013e6;
+    background-color: rgba(230, 0, 199, 0.4);
+    font-family: cursive;
+    border-right: 3px solid #000000;
+    border-left: 3px solid #000000;
+    margin: auto 0;
+    outline: 1px dotted #000000;
+    text-decoration: none;
+  }
+  header h1 {
+    font-size: 1rem;
+    letter-spacing: 0.9px;
+    font-weight: 400;
+    font-family: "Josefin Slab", serif;
+    text-shadow: #11d287 1px 1px 3px;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .map {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

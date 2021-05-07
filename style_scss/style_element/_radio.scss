@@ -1,0 +1,63 @@
+.radio{
+    &__input{
+        display: none;
+    }
+    width: 30px;
+    height: 30px;
+    border:1px solid black;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 1px;
+    cursor: pointer;
+    box-shadow: yellowgreen 2px 2px 20px;
+    transition: border 0.3s, box-shadow 0.1s;
+    outline: 2px double rgba(0, 0, 0,0.1);
+    &:active{
+        box-shadow: black 2px 2px 10px;
+        border-width: 3px;
+        outline: 2px double rgba(0, 0, 0,1);
+    }
+    &::before{
+        content: '';
+        width: 26px;
+        height: 26px;
+        background-color: brown;
+        border: 3px solid black;
+        border-radius: 50%;
+        position: absolute;
+    }
+    &__span__natural{
+        width: 18px;
+        height: 18px;
+        border:2px solid white;
+        background-color: blue;
+        border-radius: 50%;
+        z-index: 1;
+        margin-left: 4px;
+        transition: border-width 1s;
+        color: white;
+        &:active{           
+            border-width: 6px;
+        }
+    }    
+    &__span__artif{
+        width: 18px;
+        height: 18px;
+        border:2px solid white;
+        background-color: blue;
+        border-radius: 50%;
+        z-index: 1;
+        margin-left: 4px;
+        display: none;
+        transition: border-width 1s;
+        color: yellow;
+        font-size: 20px;
+        text-align: end;
+        &:active{
+            border-width: 4px;
+        }
+    }
+}
+

@@ -1,0 +1,103 @@
+@media (max-width: 1024px){
+    header{
+        h1{
+            @include heading(2rem,2.4px,900);
+        }
+    }
+    p{
+        font-size: map-get($fontSizeParagrapg, "tablet");
+    }
+    .map{
+        margin-left: 20px;       
+    }
+    .card{
+        font-size: map-get($fontSizeParagrapg, "medium");
+    }
+}
+@media (max-width: 768px){
+    header{
+        h1{
+            @include heading(1.6rem,2.4px,700);
+        }
+    }   
+    p{
+        font-size: map-get($fontSizeParagrapg, "iphone");
+    }
+    .map{
+        margin-left: 10px;       
+    }
+    .card{
+        height: map-get($cardHeight, small);
+    }
+}
+@media (max-width: 490px){
+    body{
+        background-color: $black;
+    }
+    header{
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 25px;       
+        h1{
+            @include heading(1.2rem,1.6px,600);
+        }
+        .logo{
+            display: none;
+        }
+    }   
+    .map{
+        margin-left: 5px;
+        &__img{
+            width: 94vw;
+        }         
+    }  
+    article{
+        display: none;
+    }
+    .main-2{
+        background-color: azure;
+        padding: 0 1px;
+        .lakes{
+            &__cards{
+                background-color: chartreuse;
+                width: 300px;
+                &__img{
+                    margin-left: -1px;
+                    width: 270px;
+                }
+            }
+        }
+    }   
+      
+    h6{
+        color: $white;
+    }
+}
+@media (max-width: 320px){
+    
+    header{   
+        padding-left: 5px;
+        padding-right: 5px;   
+        .nav{
+            margin-bottom: 10px;
+            height: 30px;        
+            &__navbar{
+                @include anchors(15px,0.6px,#0013e6,rgba(230, 0, 199,0.4));                                
+            }           
+        }
+        h1{
+            @include heading(1rem,0.9px,400);
+        }
+    }   
+    p{
+        font-size: map-get($fontSizeParagrapg, "phone");
+    }
+    .map{
+        margin-top: 150px;
+        margin-bottom: 100px;
+        margin-left: 0;              
+    } 
+        
+    
+      
+}

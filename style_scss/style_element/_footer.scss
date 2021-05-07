@@ -1,0 +1,9 @@
+footer{
+    padding-top: $paddingFooter;
+    padding-bottom: $paddingFooter;
+    text-align: center;
+    h6{
+        @include heading(1.2rem,0.7px,600);
+        text-shadow: rgb(255, 99, 71) 0 1px;
+    }
+}

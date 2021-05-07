@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style_scss/style.css" type="text/css">
+</head>
+<body>
+    <header>       
+        <nav class="nav">
+            <a class="nav__navbar" data-target="lake" href="">- Lake -</a>
+            <a class="nav__navbar" data-target="river" href="">- River -</a>           
+        </nav>
+        <div class="title">
+            <div class="logo"></div>
+            <h1>FISHING TURISM</h1>
+        </div>
+        
+        
+    </header>
+    <main class="main-1">
+        <section class="map">
+          <img class="map__img" src="./images/1200px-R.o.Macedonia_topography.svg.png" />     
+        </section>
+        <article>
+            <section class="card">
+                <div>
+                    <img class="card__img" src="./images/lakes/natural/Ohrid.jpg">
+                    <h5>1. Natural Lakes</h5>
+                </div>
+                <p>Lake Ohrid is one of the oldest in the world, and the deepest in the Balkans, 
+                    with a maximum depth of 288 m (940 ft) and a mean depth of 155 m (508 ft). 
+                    It covers an area of 358 km² (138 sq mi), containing an estimated 55.4 km³ of water. 
+                    It is 30.4 km long by 14.8 km wide at its maximum extent with a shoreline length of 87.53 km, 
+                    shared between Macedonia (56.02 km) and Albania (31.51 km).
+                     Of the total surface area, 248 square kilometres (96 sq mi) belongs to Macedonia and 110 km2 
+                     belongs to Albania.</p>
+            </section>
+            <section class="card">
+                <div>
+                    <img class="card__img" src="./images/lakes/artificial/kozjak.jpg">
+                    <h5>2. Artificial Lakes</h5>
+                </div>
+                <p>Kozjak is an artificial lake in Western Macedonia. It is the largest artificial lake in Macedonia, 
+                    located between the mountain Suva Gora in the west and the Jasen reserve in the east. 
+                    Towards the lake there are two ways: the southern approach to the lake leads from Makedonski Brod 
+                    and stretches along the river Treska. The other approach is from Skopje, 
+                    where the road extends along the southern slopes of Vodno. Kozjak is a 32 km long lake, 
+                    at some points even 130 meters deep, and the maximum distance from one to the other coast is 400 meters. 
+                </p>
+            </section>           
+            <section class="card">
+                <div>
+                    <img class="card__img" src="./images/rivers/vardar.jpg">
+                    <h5>3. Rivers</h5>
+                </div>
+                <p>The Vardar is the longest river in Macedonia and the second longest river in Greece, 
+                    in which it reaches the Aegean Sea at Solun. It is 388 km (241 mi) long, 
+                    out of which 76 km are in Greece, and drains an area of around 25,000 km2 (9,653 sq mi).
+                    The maximum depth of the river is 4 m (13 ft).
+                    The river rises at Vrutok, a few kilometers southwest of Gostivar in Macedonia. It passes through Gostivar, 
+                    Skopje and into Veles, crosses the Greek border near Gevgelija, Polykastro and Axioupoli ("town on the Axiós"), 
+                    before emptying into the Aegean Sea in Central Macedonia, west of Thessaloniki in northern Greece.
+                </p>
+            </section>           
+            <section class="card">
+                <div>
+                    <img class="card__img" src="./images/fish/mrena.jpg">
+                    <h5>4. Kind of fish</h5>
+                </div>
+                <p>
+                    Barbels are group of small carp-like freshwater fish, almost all of the genus Barbus. 
+                    They are usually found in gravel and rocky-bottomed slow-flowing waters with high dissolved oxygen content. 
+                    A typical adult barbel will range from 25 to 100 cm in length and weigh anywhere between 200 g and 10 kg, 
+                    although weights of 200 g are more common. 
+                    Babies weigh 100–150 g.
+                    Barbels are often fished for food; in some locations they are of commercial significance. The roe of barbels is poisonous, however. 
+                    The large Barbus barbs are also often eaten in their native range.
+                </p>
+            </section>
+        </article>
+    </main>
+    <main class="main-2">
+        <hr />
+        <br>
+        <fieldset>
+            <legend>Natural or Artificial Lake</legend>
+            <label class="radio checked" for="natural">
+                <input class="radio__input" type="radio" id="natural" name="lake" checked />
+                <span class="radio__span__natural">*</span>
+            </label>          
+            <p>Natural</p>
+            <p>Artificial</p>
+            <label class="radio" for="artificial">
+                <input class="radio__input"  type="radio" id="artificial" name="lake" />
+                <span class="radio__span__artif">*</span>
+            </label>
+        </fieldset>
+        <h2></h2>
+        <section class="lakes"></section>
+    </main>
+    <main class="main-3">
+        <h2>RIVERS</h2>
+        <section class="rivers"></section>
+    </main>
+    <hr />
+    <footer>
+        <h6>Let keep our waters clean for us and generation who will come after us!!!</h6>
+    </footer>
+    <script type="module" src="./script/main.js"></script>
+</body>
+</html>
