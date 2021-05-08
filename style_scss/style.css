@@ -242,6 +242,47 @@ header .logo {
   outline: 4px double #000000;
 }
 
+.kilometer {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.kilometer label {
+  background-color: rgba(0, 0, 0, 0.17);
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  text-align: center;
+}
+
+.kilometer label .length {
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  background-color: rgba(18, 127, 243, 0.2);
+  letter-spacing: 1.8px;
+  width: 180px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 30px rgba(209, 22, 103, 0.4) inset;
+          box-shadow: 5px 10px 30px rgba(209, 22, 103, 0.4) inset;
+  text-shadow: -1px -2px 3px #ffffff;
+}
+
+.kilometer label .length option {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #eaf8b9;
+  letter-spacing: 1.4px;
+}
+
+.kilometer label .length option:checked {
+  background-color: rgba(16, 116, 21, 0.8);
+  color: #daf185;
+}
+
 footer {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -397,6 +438,14 @@ article {
 .main-2 .lakes__cards > p::first-letter, .main-3 .lakes__cards > p::first-letter, .main-3 .main-2 .rivers__cards > p::first-letter, .main-3 .rivers__cards > p::first-letter {
   font-size: 0.8rem;
   color: #f8e4e4;
+}
+
+.detail__lake__long, .detail__lake__wide, .detail__lake__maind, .detail__lake__maxd {
+  color: rosybrown;
+}
+
+.detail__lake__long--converted, .detail__lake__wide--converted, .detail__lake__maind--converted, .detail__lake__maxd--converted {
+  display: none;
 }
 
 @media (max-width: 1024px) {

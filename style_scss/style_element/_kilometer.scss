@@ -1,0 +1,33 @@
+
+.kilometer{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    label{
+        background-color: rgba(0, 0, 0, 0.17);
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        border-left: 1px solid $black;
+        text-align: center;
+        .length{
+            margin-left: 20px;
+             @include kilometer(15px, 800, rgba(18, 127, 243,0.2), 1.8px ,);
+             width: 180px;
+             height: 30px;
+             outline: none;  
+             border: 1px solid $black;
+             border-radius: 10px;
+             box-shadow: 5px 10px 30px rgba(209, 22, 103,0.4) inset;
+             text-shadow: -1px -2px 3px $white;
+             option{
+                @include kilometer(15px, 700, rgb(234, 248, 185),1.4px);  
+                             
+                &:checked{
+                    background-color: rgba(16, 116, 21, 0.8);
+                    color: rgb(218, 241, 133);               
+                }
+             }              
+        }
+        
+    }
+   
+}

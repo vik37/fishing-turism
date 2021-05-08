@@ -19,12 +19,14 @@ html,body{
 @import './style_element/header';
 @import './style_element/mapImg';
 @import './style_element/card';
+@import './style_element/kilometer';
 @import './style_element/footer';
 
 // Style pages scss
 @import './style_page/home';
 @import './style_page/lakes';
 @import './style_page/rivers';
+@import './style_page/detail';
 
 // Media queries in style base scss
 @import './style_base/media';

@@ -1,4 +1,6 @@
-import { allNaturalLakes, allArtificialLakes, allRivers } from '../service/water_service.js';
+import { 
+    allNaturalLakes, allArtificialLakes, allRivers     
+} from '../service/water_service.js';
 
 export const allNaturalLakesView = () => {
     let count = 1;
@@ -34,7 +36,8 @@ export const allArtificialLakesView = () => {
                             <h4>Name: ${lake.name}</h4>  
                             <p>Type: ${lake.type}</p>                        
                             <p>Made on River: ${lake.river}</p>                            
-                            <p>Long: ${lake.long} km</p>                           
+                            <p>Long: ${lake.long} km</p>  
+                            <p>Build: ${lake.year?lake.year:" / "} year</p>                         
                             <button class="lakes__cards__btn" class="detail">${lake.name} Detail</button>                        
                             </div>
                         `;
@@ -52,7 +55,7 @@ export const allRiversView = () =>{
                             <h3>_${count}_</h3>
                             <img class="rivers__cards__img" src="./images/rivers/${river.name}.jpg" />                          
                             <h4>Name: ${river.name}</h4>                          
-                            <p>Length: ${river.length}</p>
+                            <p>Length: ${river.length} km</p>
                             <p>Source: ${river.source}</p> 
                             <p>Mouth: ${river.mouth}</p>
                             <button class="rivers__cards__btn">${river.name} Detail</button>
@@ -62,3 +65,4 @@ export const allRiversView = () =>{
     }
     return htmlRivers;
 }
+

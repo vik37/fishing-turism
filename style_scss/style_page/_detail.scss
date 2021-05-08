@@ -1,0 +1,10 @@
+.detail{
+    &__lake{
+        &__long, &__wide, &__maind, &__maxd{
+            color: rosybrown;
+            &--converted{
+                display: none;
+            }
+        }
+    }
+}

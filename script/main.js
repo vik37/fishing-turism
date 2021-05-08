@@ -1,5 +1,5 @@
 import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './component/water_component.js';
-//import { allArtificialLakes } from './service/water_service.js';
+import { naturalLakeDetailView, changeConvertedNumbers} from './component/lake_detail_component.js';
 
 const showAllLakesView = (num) => {
     let main = document.querySelector('.lakes');
@@ -44,3 +44,11 @@ const showAllRiversView = () =>{
 }
 showAllRiversView();
 
+const showDetailLake = () =>{
+    let lake = document.querySelector('.detail');
+    lake.innerHTML = naturalLakeDetailView(2,'natural');
+}
+
+showDetailLake();
+document.querySelector('.length').addEventListener('change',changeConvertedNumbers);
+    

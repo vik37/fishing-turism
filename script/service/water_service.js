@@ -14,6 +14,17 @@ export const allRivers = () =>{
     //console.log(rivers);
     return rivers;
 }
-export const naturalLakeDetail = () =>{
-    
+export const naturalLakeById = (id) =>{  
+    let naturals = water.lake.natural;
+    let natural = naturals.find(x => x.id === id);
+                                                      
+    //console.log(natural);
+    return natural;
+}
+
+export const artificialLakeById = (id) =>{  
+    let artificials = water.lake.artificial;
+    let artificial = artificials.filter(n => n.id === id)
+                                .find(x => x.id === id);                          
+    return artificial;
 }

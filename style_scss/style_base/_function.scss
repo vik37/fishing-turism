@@ -39,3 +39,9 @@
     width: 80vw;
     text-align: center;
 }
+@mixin kilometer($fontSize, $fontWeight, $bg-color, $letter-sp) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    background-color: $bg-color;
+    letter-spacing: $letter-sp;
+}
