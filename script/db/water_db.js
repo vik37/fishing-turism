@@ -17,7 +17,8 @@ export let water = {
                     "belongs to Albania. There are three cities on the lake's shores: Ohrid and Struga on the Macedonian side; Pogradec in Albania. "+
                     "There are also several fishing villages, although tourism is now a more significant part of their income."+ 
                     "The catchment area of the lake has a population of around 170,000 people, with 131,000 people living "+
-                    "directly at the lake shore (43,000 in Albania and 88,000 in Macedonia). "                  
+                    "directly at the lake shore (43,000 in Albania and 88,000 in Macedonia).",
+            fish : [2,4,10,11,15,17,18,19]                
         },
         {
             id : 2,
@@ -35,8 +36,9 @@ export let water = {
             "The largest town in the region is Resen in Macedonia. In 2014, the Ohrid-Prespa Transboundary Reserve "+
             "between Albania and Macedonia was added to UNESCO's World Network of Biosphere Reserves."+
             "The Great Prespa Lake has the total surface of 259 km2 (100.00 sq mi). "+
-            "The largest part of it, 176.3 km2 (68.07 sq mi) belongs to North Macedonia; "+
-            "46.3 km2 (17.88 sq mi) to Albania; and 36.4 km2 (14.05 sq mi) to Greece."
+            "The largest part of it, 176.3 km2 (68.07 sq mi) belongs to Republic of Macedonia; "+
+            "46.3 km2 (17.88 sq mi) to Albania; and 36.4 km2 (14.05 sq mi) to Greece.",
+            fish : [2,3,9,10,11,14,15,18,17,19,21]
         },
         {
             id : 3,
@@ -55,7 +57,8 @@ export let water = {
                     "partially in Macedonia after Lake Ohrid and Lake Prespa." +
                     "The lake was on the southern line of the Macedonian front during World War I, "+
                     "and its southern shore became the site of the various battles between allied troops and "+
-                    "Bulgarian troops in 1916, 1917 and 1918."
+                    "Bulgarian troops in 1916, 1917 and 1918.",
+            fish : [2,12,13,16,18,20]
         }],              
         artificial : [{
             id : 1,
@@ -75,8 +78,8 @@ export let water = {
                     "Fishing is permitted along the whole lake, except in the two bays of Jasen called Pekolnik "+
                     "and Kolomot, which are converted into attractive beaches for visitors. "+
                     "Fishing is regulated by the service responsible for the preservation of the lake. "+
-                    "Everyone interested should contact the authorities for a license for recreational or sport fishing."
-                    
+                    "Everyone interested should contact the authorities for a license for recreational or sport fishing.",
+            fish : [2,5,9,10,11,13,15,14,18]
         },
         {      
             id : 2,                 
@@ -94,7 +97,8 @@ export let water = {
                    "plant Tikvesh is located. The lake is rich with fish. Most dominant is the sheat-fish that can reach "+
                    "the size of 2m. Thanks to the irrigation Tikves Lake made Tikves valley a real oasis with endless "+
                    "vineyards and orchards. Today Tikves Lake with its micro-climate establishes itself as an recreational and "+
-                   "tourist resort."           
+                   "tourist resort.",
+            fish : [1,2,12,13,16,18,21]        
         },
         {      
             id : 2,                 
@@ -109,7 +113,8 @@ export let water = {
                    "trout fishing during the summer; a distinctive building in the lake is the half-submerged "+
                    "church of Saint Nicholas. Since 1952 it is part of the Mavrovo National Park. "+
                    "With its surface of 13.7 km2 (3,400 acres), is one of the most extensive lakes of the country." +
-                   "The lake is surrounded by the Šar, on the North, and the Bistra, on the South, both exceeding heights of 2000 m."
+                   "The lake is surrounded by the Šar, on the North, and the Bistra, on the South, both exceeding heights of 2000 m.",
+            fish : [2,4,5,10,14,17,18]   
         },
         {   
             id : 3,
@@ -124,7 +129,8 @@ export let water = {
                     "To the Lake, Mladost leads the regional road R-1102 (Skopje-Veles), and at 1 km is the connection "+
                     "with the E-75 highway (Skopje-Gevgelija). Today, Mladost Lake is one of the favorite places for rest "+
                     "and recreation of citizens from Veles and surrounding towns. The most frequent visitors to the Lake are "+
-                    "the fishermen, as well as tourists during the summer months."
+                    "the fishermen, as well as tourists during the summer months.",
+            fish : [1,2,3,8,12,13,16,18,20,21]
         },
         {
             id : 4,
@@ -142,7 +148,8 @@ export let water = {
                    "Debar Lake is the favorite lake among passionate fishermen, not only among the domestic ones, "+
                    "but also among those from the neighboring countries. Those who have not been hunting for carp or "+
                    "chub in Debar Lake, according to many are not true fishermen. Not far from the east coast of "+
-                   "Debar Lake is the Debar Island, located about 1 km northwest of the village of Pralenik."
+                   "Debar Lake is the Debar Island, located about 1 km northwest of the village of Pralenik.",
+            fish : [2,4,5,10,11,15,17,18]
         },
         {
             id : 5,
@@ -160,7 +167,8 @@ export let water = {
                     "It can be reached by a road passing through the thick pine forest." +
                     "If you want to refresh yourself in the waters of the Berovo Lake, the best time for you "+
                     "would be in the months of July and August. The surroundings of the lake abound with "+
-                    "beautiful terrain for picnics, recreation and sports."                                  
+                    "beautiful terrain for picnics, recreation and sports.",
+            fish : [5,10,15,18]                    
         }, 
         {
             id : 6,
@@ -181,7 +189,8 @@ export let water = {
                    "excellent conditions for sport fishing. In addition, along the shore of the lake there are "+
                    "numerous archeological sites from different historical periods. "+
                    "However, the lake is not used for tourism at all, and in its vicinity there is not a "+
-                   "single accommodation and catering facility."                               
+                   "single accommodation and catering facility.",
+            fish : [1,2,10,11,12,13,16,21]                              
         },
         {
             id : 7,
@@ -197,7 +206,8 @@ export let water = {
                    "the village Dolna Vrashtica, on the east by the area of the village Gabrevci, on the south "+
                    "by the area of the village Dolni Radesh, while on the west by the area of the village Garvan, "+
                    "where the embankment of the dam is located. "+
-                   "The lake is rich in rich and diverse species, with many species of freshwater fish and birds in and around it. "
+                   "The lake is rich in rich and diverse species, with many species of freshwater fish and birds in and around it.",
+            fish : [1,2,10,13,16,18]
         },
         {
             id : 8,
@@ -219,7 +229,8 @@ export let water = {
                    "obtaining electricity, but also for irrigation of the villages in the surroundings. "+
                    "The lake is stocked and is often used for sports fishing. In this lake there is the "+
                    "underwater cave Vrelo, one of the deepest underwater caves in Europe, which has a depth "+
-                   "of more than 203 m."                                        
+                   "of more than 203 m.",
+            fish : [5,6,9,10,11,15,19]                                        
         }       
     ]},   
     river : [{
@@ -238,7 +249,8 @@ export let water = {
                 "The Vardar basin comprises two-thirds of the territory of Macedonia. The valley features fertile "+
                 "lands in the Polog region, around Gevgelija and in the Thessaloniki regional unit. The river is "+
                 "surrounded by mountains elsewhere. The superhighways Greek National Road 1 in Greece and M1 and "+
-                "E75 run within the valley along the river's entire length to near Skopje."
+                "E75 run within the valley along the river's entire length to near Skopje.",
+        fish : [1,2,5,9,10,11,13,14,15,18,19]
     },
     {
         id:2,
@@ -255,7 +267,8 @@ export let water = {
                 "In the second half of the 20th century, with the construction of the two dams on the Macedonian "+
                 "part of the river Crn Drim, and four on the Albanian part, the eel route was completely blocked. "+
                 "Dams are a problem for other fish species that used to travel to the Ohrid Lake from the Adriatic "+
-                "Sea. According to the IUCN World Red List, European eel is considered a critically endangered species."
+                "Sea. According to the IUCN World Red List, European eel is considered a critically endangered species.",
+        fish : [4,5,6,10,11,14,15,17,18,19]
     },
     {
         id:3,
@@ -272,7 +285,8 @@ export let water = {
                "between Rosoman and Gradsko. Thus, the river makes a bend of almost 180 degrees east of Bitola. "+ 
                "This bend was part of the Macedonian front in World War I. It was known to the allied forces as the "+
                "Cerna Bend or Cerna Loop, and two major battles were fought here: the Battle of the Cerna Bend (1916) "+
-               "and the Battle of the Crna Bend (1917)."
+               "and the Battle of the Crna Bend (1917).",
+        fish : [1,2,9,10,11,13,14,18]
     },
     {
         id:4,
@@ -293,20 +307,14 @@ export let water = {
                 "The source of the river is located in the forests of the Maleševo Mountains, close to the "+
                 "border of Bulgaria, east of the city of Berovo, in an altitude of around 1690 m a.s.l. "+
                 "The Bregalnica River leads into the Vardar river on an altitude of 137 m a.s.l., close to "+
-                "the village of Gradsko."
+                "the village of Gradsko.",
+        fish : [1,2,5,9,10,11,13,14,18]
     },
     {
         id : 5,
         name : "Treska",
         length : 132,
         source : "Stogovo mountains",
-        mouth : "Vardar"
-    },
-    {
-        id : 6,
-        name : "Pcinja", 
-        length : 135,
-        source : "Trgoviste (Srbija)",
         mouth : "Vardar",
         text : "Treska is a river in the western part of Macedonia, a right tributary to Vardar. It is 132 km "+
                 "(82 mi) long, and its basin is 2350 km². "+
@@ -314,7 +322,33 @@ export let water = {
                 "the valley of Kičevo. At Makedonski Brod it turns northwards, flows between the mountains of Suva Gora "+
                 "and Karadžica, finally flowing into the Vardar in the Skopje suburb Gjorče Petrov. "+
                 "Three dams have been built on Treska: (in 1937 the Matka dam and lake near Skopje, "+
-                "in 2004 the Kozjak dam and lake, in 2012 the Sveta Petka"
+                "in 2004 the Kozjak dam and lake, in 2012 the Sveta Petka",
+        fish : [5,6,9,10,11,14,15,18]
+    },
+    {
+        id : 6,
+        name : "Pcinja", 
+        length : 135,
+        source : "Trgoviste (Srbija)",
+        mouth : "Vardar",
+        text : "The Pčinja originates from several streams on the western slopes of the Dukat mountain which "+
+        "meet at the village of Radovnica and continue to the west originally under the name of the Tripušnica. "+
+        "The river creates a micro-region of Pčinja, with center being the municipal seat of Trgovište where "+
+        "Tripušnica meets the left tributary of Lesnička reka from the south and continues to the west under the "+
+        "name of Pčinja. "+
+        "After the Pčinja passes next to the northern side of the mountain of Široka planina and the village of "+
+        "Šajince where it receives the right tributary of Koćurica from the north, it is prevented to continue "+
+        "to the west by the eastern side of the Rujen mountain and turns south, into the narrow valley between "+
+       "the Rujen and Kozjak mountains. The small village and monastery of Prohor Pčinjski are located in the "+
+       "valley. Just after the river passes next to the monastery, after 52 km of flow in Serbia, the Pčinja "+
+       "crosses the Macedonian border. For the remaining 83 km, the river bends gently to the southwest. "+
+       "It passes next to the villages of Karlovce, Dragomance, Strnovac, Vojnik, Klečevce, Pčinja, Studena Bara, "+
+       "Gorno Konjare, Dolno Konjare and the small town of Katlanovo, with the neighboring Katlanovska Banja, the "+
+       "most popular spa in Macedonia. The upper course in Macedonia creates a micro-region of Sredorek, and the "+
+       "lower a micro-region of Kotorci, with the gorge of Bader in between. In the lower course, the Pčinja follows "+
+       "the western side of the mountain Gradištanska and flows into the Vardar river, on the gorge of Taor section "+
+       "of the Vardar's course, halfway between the cities of Skopje and Veles.",
+       fish : [1,9,10,11,13,14,18]
     },
     { 
         id : 7,
@@ -335,7 +369,8 @@ export let water = {
                "With channels, part of the waters of the river are brought to the Mavrovo Lake and fill it with "+
                "water, and from here with underground tunnels to Vardar. Here HPP (Vrben) was built. "+
                "In its course Radika receives many tributaries from which more than 10 km long are only: "+
-               "Mavrovska Reka, r. Ribnica and Mala Reka."
+               "Mavrovska Reka, r. Ribnica and Mala Reka.",
+        fish : [5,6,11,19]
     },
     {
         id : 8,
@@ -350,7 +385,8 @@ export let water = {
                 "runs through the eponymous town of Radoviš. Afterwards the Strumica runs southeastwards through the "+
                 "Strumica Valley (Vasilevo, Strumica and Novo Selo municipality), passing through the town of Strumica "+
                 "and turning east to enter Bulgaria south of Zlatarevo. A wide meandering valley follows until the river "+
-                "flows into the Struma as a right tributary northeast of Mitino, not far from Rupite."       
+                "flows into the Struma as a right tributary northeast of Mitino, not far from Rupite.",
+        fish : [5,7,9,10,14,18,19]       
     }
 ]  
 }

@@ -1,7 +1,8 @@
 
 .kilometer{
     margin-top: 3px;
-    margin-bottom: 3px;
+    margin-bottom: 15px;
+    align-self: flex-end;
     label{
         background-color: rgba(0, 0, 0, 0.17);
         border-top: 1px solid $black;
@@ -10,7 +11,7 @@
         text-align: center;
         .length{
             margin-left: 20px;
-             @include kilometer(15px, 800, rgba(18, 127, 243,0.2), 1.8px ,);
+             @include kilometer(15px, 800, rgba(18, 127, 243,0.2), 1.8px);
              width: 180px;
              height: 30px;
              outline: none;  

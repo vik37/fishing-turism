@@ -13,6 +13,13 @@
     .card{
         font-size: map-get($fontSizeParagrapg, "medium");
     }
+    .lake{
+        &__detail{           
+            & > p{
+                font-size: map-get($fontSizeParagrapg, "tablet");
+            }           
+        }                  
+    }
 }
 @media (max-width: 768px){
     header{
@@ -28,6 +35,13 @@
     }
     .card{
         height: map-get($cardHeight, small);
+    }
+    .lake{
+        &__detail{           
+            & > p{
+                font-size: map-get($fontSizeParagrapg, "iphone");
+            }           
+        }                  
     }
 }
 @media (max-width: 490px){
@@ -97,7 +111,44 @@
         margin-bottom: 100px;
         margin-left: 0;              
     } 
-        
     
-      
+    .lake{
+        padding-left: 9px;
+        background-color: blanchedalmond;
+        .subtitle{
+            margin-left: -10px;
+        }
+        .kilometer{
+            label{
+                display: flex;
+                flex-direction: row;
+                text-align: start;
+                align-items: baseline;
+                font-size: 14px;
+                margin: 10px auto;
+                background-color: $white;
+                border: none;
+                .length{
+                    @include kilometer(12px, 600, rgba(18, 127, 243,0.2), 0.8px);
+                    width: 140px;
+                    height: 20px;
+                    //margin-left: 60px;
+                }
+            }       
+        }
+        &__detail__image{
+            padding: 16px;
+            width: 280px;
+            &__img{
+                width: 240px;
+            }
+            
+        }
+        &__detail{
+            & > p{
+                background-color: blanchedalmond;
+                font-size: map-get($fontSizeParagrapg, "phone");
+            } 
+        }       
+    }   
 }

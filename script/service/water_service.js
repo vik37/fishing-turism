@@ -28,3 +28,9 @@ export const artificialLakeById = (id) =>{
                                 .find(x => x.id === id);                          
     return artificial;
 }
+
+export const riverById =(id) =>{
+    let rivers = water.river;
+    let river = rivers.find(x => x.id === id);
+    return river;
+}

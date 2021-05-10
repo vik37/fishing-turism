@@ -13,6 +13,7 @@ html,body{
 @import './style_base/function';
 
 // Style elements scss
+@import './style_element/subtitle';
 @import './style_element/paragraph';
 @import './style_element/radio';
 @import './style_element/button';
@@ -20,13 +21,17 @@ html,body{
 @import './style_element/mapImg';
 @import './style_element/card';
 @import './style_element/kilometer';
+@import './style_element/detail_lake_img';
+@import './style_element/detail_river_img';
+@import './style_element/description';
 @import './style_element/footer';
 
 // Style pages scss
 @import './style_page/home';
 @import './style_page/lakes';
 @import './style_page/rivers';
-@import './style_page/detail';
+@import './style_page/lake_detail';
+@import './style_page/river_detail';
 
 // Media queries in style base scss
 @import './style_base/media';

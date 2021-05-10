@@ -1,0 +1,6 @@
+.river__detail__image{
+    @extend .lake__detail__image;
+    &__img{
+        @extend .lake__detail__image__img;
+    }
+}

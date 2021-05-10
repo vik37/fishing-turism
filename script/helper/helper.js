@@ -8,5 +8,8 @@ export const convertedLengthLake = ({long,wide},longArt) =>{
 }
 export const convertedDeptLake = ({mainDepth, maxDepth}) =>{
     return {mainDepth : convertedMeterToFeet(mainDepth).toFixed(3), 
-        maxDepth : convertedMeterToFeet(maxDepth).toFixed(3)}
+        maxDepth : convertedMeterToFeet(maxDepth).toFixed(3)};
+}
+export const convertedRiverLong = ({length}) =>{
+    return {length: convertedKilometerToMile(length)};
 }

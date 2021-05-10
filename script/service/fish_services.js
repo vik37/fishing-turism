@@ -6,3 +6,7 @@ const getFishById = (id) =>{
                            .find(f => f.id === id);
     return fishById;
 }
+
+export const getByLake = ([]) =>{
+    
+}

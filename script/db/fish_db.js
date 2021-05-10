@@ -237,5 +237,17 @@ export let fish = [
         weigh : 2,
         lifespan : 0,
         clutchSize : 300.000
-    }              
+    },
+    {
+        id : 21,
+        species : "Pumpkinseed",
+        size : 
+        {
+            average : 10,
+            max : 15
+        },
+        weigh : 0.2,
+        lifespan : 12,
+        clutchSize : 50.000
+    }                 
 ]
