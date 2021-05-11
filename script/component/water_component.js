@@ -1,10 +1,11 @@
 import { 
     allNaturalLakes, allArtificialLakes, allRivers     
 } from '../service/water_service.js';
-
+//THIS FUNCTION RETURN HTML CARD VIEW OF ALL NATURAL LAKES FOR ALL LAKES PAGE CHANGED IN NATURAL BY RADIO BTN
 export const allNaturalLakesView = () => {
     let count = 1;
     let htmlNaturalLakes = ``;
+    // here we get all natural lakes data from function allNaturalLakes from water_service which returns all natural lakes
     let lakes = allNaturalLakes();   
     for(let lake of lakes){
         //console.log(lake);
@@ -24,8 +25,10 @@ export const allNaturalLakesView = () => {
     }
     return htmlNaturalLakes;
 }
+//THIS FUNCTION RETURN HTML CARD VIEW OF ALL ARTIFICIAL LAKES FOR ALL LAKES PAGE CHANGED IN ARTIFICIAL BY RADIO BTN
 export const allArtificialLakesView = () => {
     let htmlArtificialLakes = ``;
+    // here we get all artificial lakes data from function allArtif.Lakes from water_service which returns all artif. lakes
     let lakes = allArtificialLakes(); 
     let count = 1;  
     for(let lake of lakes){
@@ -45,8 +48,10 @@ export const allArtificialLakesView = () => {
     }
     return htmlArtificialLakes;
 }
+//THIS FUNCTION RETURN HTML CARD VIEW OF ALL RIVERS FOR ALL RIVERS PAGE
 export const allRiversView = () =>{
     let htmlRivers = ``;
+    // here we get all rivers data from function allRivers from water_service which returns all rivers
     let rivers = allRivers();
     let count = 1;
     for(let river of rivers){

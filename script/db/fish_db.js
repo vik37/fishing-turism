@@ -1,7 +1,7 @@
 export let fish = [
     {
         id :  1,
-        species : "Cat fish",
+        species : "Cat Fish",
         size : 
         {
             average : 300,

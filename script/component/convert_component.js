@@ -1,4 +1,5 @@
 
+// THIS FUNCTION RETURN HTML VIEW FOR CHOISE KILOMETER, METER TO MILE, FEET OR REVERSE
 export const kmToMileView = () =>{
     return `
         <div class="kilometer">

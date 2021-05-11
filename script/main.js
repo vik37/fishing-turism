@@ -1,7 +1,7 @@
 import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './component/water_component.js';
 import { lakeDetailView,changeConvertedNumbers} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers } from './component/river_detail_component.js';
-
+//FUNCTION FOR SHOW PAGE ALL LAKES 
 const showAllLakesView = (num) => {
     let main = document.querySelector('.lakes');
     let subtitle = document.getElementsByTagName('h2')[0];
@@ -15,12 +15,11 @@ const showAllLakesView = (num) => {
     }
     //console.log(num);
 }
-
+// FUNCTION RADIO BUTTONS FOR CHANGE ARTIFICIAL OR NATURAL
 const checkRadio = () =>{
     showAllLakesView(0);
     let radio = document.querySelectorAll('.radio__input');           
-    for(let i = 0;i < radio.length;i++){
-        
+    for(let i = 0;i < radio.length;i++){      
         radio[i].addEventListener('change',function(){
             if(i == 0){
                 document.querySelector('.radio__span__natural').style.display = "block";
@@ -39,12 +38,14 @@ const checkRadio = () =>{
 }
 checkRadio();
 
+// FUNCTION FOR SHOW PAGE ALL RIVERS 
 const showAllRiversView = () =>{
     let rivers = document.querySelector('.rivers');
     rivers.innerHTML = allRiversView();
 }
 showAllRiversView();
 
+// FUNCTION FOR SHOW PAGE LAKE IN DETILE
 const showDetailLakeView = () =>{
     let lake = document.querySelector('.lake');
     lake.innerHTML = lakeDetailView(2,'natural');
@@ -53,6 +54,7 @@ const showDetailLakeView = () =>{
 
 showDetailLakeView();
 
+// FUNCTION FOR SHOW PAGE RIVER IN DETILE
 const showDetailRiverView = () =>{
     let river = document.querySelector('.river');
     river.innerHTML = riverDetailView(8);

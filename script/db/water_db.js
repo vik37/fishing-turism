@@ -386,7 +386,7 @@ export let water = {
                 "Strumica Valley (Vasilevo, Strumica and Novo Selo municipality), passing through the town of Strumica "+
                 "and turning east to enter Bulgaria south of Zlatarevo. A wide meandering valley follows until the river "+
                 "flows into the Struma as a right tributary northeast of Mitino, not far from Rupite.",
-        fish : [5,7,9,10,14,18,19]       
+        fish : [7,9,10,14,18,19]       
     }
 ]  
 }

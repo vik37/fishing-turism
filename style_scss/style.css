@@ -32,6 +32,113 @@ p::first-letter {
   text-shadow: #0c30ff -1px -1px 2px;
 }
 
+.speaces_sub {
+  background-color: #acfcc0;
+  -webkit-box-shadow: rgba(174, 4, 180, 0.6) 1px 1px 10px inset;
+          box-shadow: rgba(174, 4, 180, 0.6) 1px 1px 10px inset;
+  padding-left: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-shadow: 1px 2px rgba(174, 4, 180, 0.5);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2.8px;
+  margin-top: 10px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#945c48), to(#414102));
+  background: linear-gradient(#945c48, #414102);
+}
+
+header .nav {
+  margin-bottom: 10px;
+  background-color: #996618;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 4px;
+  -webkit-box-shadow: #ede28a 10px 5px 40px inset;
+          box-shadow: #ede28a 10px 5px 40px inset;
+}
+
+header .nav__navbar {
+  font-size: 18px;
+  letter-spacing: 1.2px;
+  color: #0013e6;
+  background-color: rgba(230, 0, 199, 0.4);
+  font-family: cursive;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+  margin: auto 0;
+  outline: 1px dotted #000000;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+header .nav__navbar:hover {
+  font-size: 17px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  background-color: rgba(152, 2, 221, 0.9);
+  font-family: cursive;
+  border-right: 3px solid #000000;
+  border-left: 3px solid #000000;
+  margin: auto 0;
+  outline: 1px dotted #000000;
+  text-decoration: none;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+}
+
+header .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header h1 {
+  font-size: 2.3rem;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  font-family: "Josefin Slab", serif;
+  text-shadow: #11d287 1px 1px 3px;
+  text-align: center;
+  color: #ffffff;
+}
+
+header .logo {
+  border: 1px dashed black;
+  width: 90px;
+  height: 40px;
+  background-image: url("../../images/sticker-fish.png");
+  background-position: center;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(1px 1px 10px white);
+          filter: drop-shadow(1px 1px 10px white);
+}
+
 .radio {
   width: 30px;
   height: 30px;
@@ -322,6 +429,76 @@ header .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.fish__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.fish__section .fish {
+  padding-bottom: 10px;
+}
+
+.fish__section .fish__li {
+  width: 450px;
+  border: 2px solid #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fish__section .fish__li__img {
+  width: 270px;
+  height: 100px;
+  border: 2px dotted #d15a5a;
+  outline: 1px solid #000000;
+  outline-offset: 1px;
+  border-radius: 25px;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  -webkit-transition: -webkit-transform 0.9s;
+  transition: -webkit-transform 0.9s;
+  transition: transform 0.9s;
+  transition: transform 0.9s, -webkit-transform 0.9s;
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+}
+
+.fish__section .fish__li__img:hover {
+  -webkit-transform: rotateY(140deg);
+          transform: rotateY(140deg);
+}
+
+.fish__section .fish__li__btn {
+  width: 180px;
+  background-color: #2007e0;
+  -webkit-box-shadow: #00bfff 10px 10px 30px inset;
+          box-shadow: #00bfff 10px 10px 30px inset;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  letter-spacing: 2.4px;
+  outline: 1px solid #000000;
+  outline-offset: 1px;
+  font-weight: 600;
+}
+
+.fish__section .fish__li__btn:hover {
+  background-color: #5f09a5;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 900;
 }
 
 footer {
