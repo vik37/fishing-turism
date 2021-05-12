@@ -362,14 +362,14 @@ header .logo {
   outline: 4px double #000000;
 }
 
-.kilometer {
+.kilometer, .centimeter {
   margin-top: 3px;
   margin-bottom: 15px;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
-.kilometer label {
+.kilometer label, .centimeter label {
   background-color: rgba(0, 0, 0, 0.17);
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
@@ -377,7 +377,7 @@ header .logo {
   text-align: center;
 }
 
-.kilometer label .length {
+.kilometer label .length, .centimeter label .length, .centimeter label .size {
   margin-left: 20px;
   font-size: 15px;
   font-weight: 800;
@@ -393,16 +393,21 @@ header .logo {
   text-shadow: -1px -2px 3px #ffffff;
 }
 
-.kilometer label .length option {
+.kilometer label .length option, .centimeter label .length option, .centimeter label .size option {
   font-size: 15px;
   font-weight: 700;
   background-color: #eaf8b9;
   letter-spacing: 1.4px;
 }
 
-.kilometer label .length option:checked {
+.kilometer label .length option:checked, .centimeter label .length option:checked, .centimeter label .size option:checked {
   background-color: rgba(16, 116, 21, 0.8);
   color: #daf185;
+}
+
+.centimeter label {
+  font-size: 0.8rem;
+  text-shadow: #0707a6 1px 1px 1px;
 }
 
 .lake__detail__image, .river__detail__image {
@@ -694,12 +699,92 @@ article {
           flex-direction: column;
 }
 
-.river .kilometer {
+.river .kilometer, .river .centimeter {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
 
 .river__detail__long--converted {
+  display: none;
+}
+
+.fish__detail {
+  background: url("../../images/808dbdcbcc49bb37ea41fd60fe693545.jpg");
+  background-repeat: repeat;
+  background-size: 200vh;
+  background-position-x: center;
+  background-position-y: center;
+  border-left: 20px dotted rgba(0, 0, 0, 0.3);
+  border-right: 20px dotted rgba(0, 0, 0, 0.3);
+  -webkit-filter: drop-shadow(8px 8px 10px #006eff);
+          filter: drop-shadow(8px 8px 10px #006eff);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fish__detail > * {
+  font-size: 1.4rem;
+  text-shadow: -1px -1px #ffff52;
+  letter-spacing: 2.3px;
+  margin-top: 16px;
+}
+
+.fish__detail__image {
+  border: 1px solid #000000;
+  width: 400px;
+  height: 200px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.fish__detail__image__img {
+  width: 350px;
+  height: 180px;
+  border: 3px solid #1802a8;
+}
+
+.fish__detail__large {
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  background-color: rgba(0, 110, 255, 0.4);
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+  letter-spacing: 1.2px;
+}
+
+.fish__detail__large--converted {
+  display: none;
+  background-color: rgba(0, 110, 255, 0.4);
+  font-size: 0.9rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
+  letter-spacing: 1.2px;
+  list-style: none;
+  color: #ffffff;
+}
+
+.fish__detail .weigh--converted {
   display: none;
 }
 
@@ -832,7 +917,7 @@ article {
   .lake .subtitle, .river .subtitle {
     margin-left: -10px;
   }
-  .lake .kilometer label, .river .kilometer label {
+  .lake .kilometer label, .river .kilometer label, .lake .centimeter label, .river .centimeter label {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -849,7 +934,7 @@ article {
     background-color: #ffffff;
     border: none;
   }
-  .lake .kilometer label .length, .river .kilometer label .length {
+  .lake .kilometer label .length, .river .kilometer label .length, .lake .centimeter label .length, .river .centimeter label .length, .centimeter .lake .kilometer label .size, .centimeter .river .kilometer label .size, .lake .centimeter label .size, .river .centimeter label .size {
     font-size: 12px;
     font-weight: 600;
     background-color: rgba(18, 127, 243, 0.2);

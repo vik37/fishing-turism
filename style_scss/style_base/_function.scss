@@ -45,3 +45,10 @@
     background-color: $bg-color;
     letter-spacing: $letter-sp;
 }
+@mixin fishLarge($bg-color, $fontSize, $txtShadow, $letterSpace){
+    background-color: $bg-color;
+    font-size: $fontSize;
+    color: $white;
+    text-shadow: $txtShadow;
+    letter-spacing: $letterSpace;
+}

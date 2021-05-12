@@ -23,6 +23,7 @@ html,body{
 @import './style_element/mapImg';
 @import './style_element/card';
 @import './style_element/kilometer';
+@import './style_element/centimeter';
 @import './style_element/detail_lake_img';
 @import './style_element/detail_river_img';
 @import './style_element/description';
@@ -35,6 +36,7 @@ html,body{
 @import './style_page/rivers';
 @import './style_page/lake_detail';
 @import './style_page/river_detail';
+@import './style_page/fish_detail';
 
 // Media queries in style base scss
 @import './style_base/media';

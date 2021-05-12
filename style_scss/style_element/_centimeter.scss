@@ -1,0 +1,11 @@
+.centimeter{
+    @extend .kilometer;
+    label{
+        font-size: 0.8rem;
+        text-shadow: #0707a6 1px 1px 1px;
+        .size{
+            @extend .length;
+            
+        }
+    }
+}

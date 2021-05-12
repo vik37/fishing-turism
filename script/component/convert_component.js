@@ -12,4 +12,15 @@ export const kmToMileView = () =>{
             </div>
     `;
 }
-
+export const cmToInAndKgToLbView = () =>{
+    return `
+        <div class="centimeter">
+            <label>choose cm,kg or inch, lb:
+                    <select class="size" name="size">
+                        <option value="cm">Centimeter, Kilogram...</option>
+                        <option value="in">Inch, Pound...</option>
+                    </select>
+                </label>
+            </div>
+    `;
+}

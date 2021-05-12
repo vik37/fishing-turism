@@ -24,3 +24,7 @@ export const getFishByLake = (arr) =>{
     }   
     //console.log(fishArr);  
 }
+export const getFishBySpeaces = (speaces) =>{
+    let fishSpeaces = fish.find(x => x.species === speaces);
+    return fishSpeaces;
+}

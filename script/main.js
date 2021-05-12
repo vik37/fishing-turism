@@ -1,6 +1,7 @@
 import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './component/water_component.js';
 import { lakeDetailView,changeConvertedNumbers} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers } from './component/river_detail_component.js';
+import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
 //FUNCTION FOR SHOW PAGE ALL LAKES 
 const showAllLakesView = (num) => {
     let main = document.querySelector('.lakes');
@@ -63,4 +64,9 @@ const showDetailRiverView = () =>{
 
 showDetailRiverView();
 
-
+const showFishDetailView = () =>{
+    let fish = fishDetailView("Chub");
+    document.querySelector(".main-6").innerHTML = fish;
+    document.querySelector(".main-6 .centimeter").addEventListener("change", changeConvertedFishSizeWeigh);
+}
+showFishDetailView();
