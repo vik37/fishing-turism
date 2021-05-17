@@ -1,6 +1,7 @@
 import { getFishBySpeaces } from '../service/fish_services.js';
 import { convertedFishWeigh, convertedFishSize} from '../helper/helper.js';
 import { cmToInAndKgToLbView } from './convert_component.js';
+import { bubble } from './bubble_component.js';
 export const changeConvertedFishSizeWeigh = (e) =>{
     let conv = "--converted";
     if(e.target.value === "cm"){
@@ -22,7 +23,7 @@ export const fishDetailView = (speaces) =>{
     const {weigh} = fish;
     const convertedSize = convertedFishSize({average,max});
     const convertedWeigh = convertedFishWeigh({weigh});
-    console.log(fish);
+    //console.log(fish);
     const htmlFishDetail = `
                                 <section id="${fish.species}" class="fish__detail">
                                     ${cmToInAndKgToLbView()}
@@ -44,6 +45,7 @@ export const fishDetailView = (speaces) =>{
                                     <p>Clutch Size: ${fish.clutchSize.toFixed(3)} eggs</p>
                                     <p>Life span: ${fish.lifespan} year</p>
                                 </section>
+                                ${bubble()}
                             `;                         
     return htmlFishDetail;                        
 }

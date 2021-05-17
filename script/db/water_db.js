@@ -101,7 +101,7 @@ export let water = {
             fish : [1,2,12,13,16,18,21]        
         },
         {      
-            id : 2,                 
+            id : 3,                 
             name : "Mavrovo",
             type : "artificial",                                                  
             river : "",
@@ -117,7 +117,7 @@ export let water = {
             fish : [2,4,5,10,14,17,18]   
         },
         {   
-            id : 3,
+            id : 4,
             name : "Mladost",
             type : "artificial",                                                 
             river : "Otovica",
@@ -133,7 +133,7 @@ export let water = {
             fish : [1,2,3,8,12,13,16,18,20,21]
         },
         {
-            id : 4,
+            id : 5,
             name : "Debar",
             type : "artificial",                          
             river : "black drim and radica",
@@ -152,7 +152,7 @@ export let water = {
             fish : [2,4,5,10,11,15,17,18]
         },
         {
-            id : 5,
+            id : 6,
             name : "Berovo", 
             type : "artificial",                           
             river : "Kleparska",
@@ -171,7 +171,7 @@ export let water = {
             fish : [5,10,15,18]                    
         }, 
         {
-            id : 6,
+            id : 7,
             name : "Kalimanci", 
             type : "artificial",                           
             river : "Bregalnica",
@@ -193,7 +193,7 @@ export let water = {
             fish : [1,2,10,11,12,13,16,21]                              
         },
         {
-            id : 7,
+            id : 8,
             name : "Mantovo", 
             type : "artificial",                           
             river : "Kriva Lakavica",
@@ -210,7 +210,7 @@ export let water = {
             fish : [1,2,10,13,16,18]
         },
         {
-            id : 8,
+            id : 9,
             name : "Matka", 
             type : "artificial",                           
             river : "Treska",

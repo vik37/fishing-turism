@@ -1,16 +1,18 @@
-.river{
-    ///display: none;
-    @extend .lake;
-    display: flex;
-    flex-direction: column;
-    .kilometer{
-        align-self: flex-end;
-    }
-    &__detail{
-        @extend .lake__detail;
-        &__long{                       
-            &--converted{
-                display: none;
+.main-5{
+    display: none;
+    .river{
+        @extend .lake;
+        display: flex;
+        flex-direction: column;
+        .kilometer{
+            align-self: flex-end;
+        }
+        &__detail{
+            @extend .lake__detail;
+            &__long{                       
+                &--converted{
+                    display: none;
+                }
             }
         }
     }

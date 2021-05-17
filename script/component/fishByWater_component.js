@@ -4,7 +4,7 @@ import { getFishByLake } from '../service/fish_services.js';
 // which are found in that water (RIVER OR LAKE) (LIKE RELATIONAL DATABASE) AND RETURN WITH HTML VIEW
 export const fishInWater = (arrOfFish) =>{
     let htmlFishBlock = ``;
-    // Here we send array for get array of fish speacies
+    // Here we send array from get array of fish speacies
     let fish = getFishByLake(arrOfFish);
     if(fish instanceof String){
         htmlFishBlock = `
@@ -23,6 +23,6 @@ export const fishInWater = (arrOfFish) =>{
                         `;
         }       
     }   
-    console.log(fish);
+    //console.log(fish);
     return htmlFishBlock;
 }

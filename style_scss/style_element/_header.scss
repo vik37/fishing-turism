@@ -20,8 +20,14 @@ header{
                 @include anchors(17px,0.6px,$white,rgba(152, 2, 221, 0.9));
                 filter: grayscale(70%);
             }
-        }           
-    }
+                
+        }
+        .active{
+            @include anchors(18px,1.2px,#8be29e,rgba(48, 20, 44, 0.9));
+            border-radius: 8px;
+            cursor:no-drop;
+        }    
+    }        
     .title{
         display: flex;
         justify-content: space-evenly;

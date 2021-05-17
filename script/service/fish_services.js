@@ -9,7 +9,7 @@ const getFishById = (id) =>{
 export const getFishByLake = (arr) =>{
     let fishArr = [];
     if(arr instanceof Array){
-        console.log(arr);
+        //console.log(arr);
         for(let f of arr){
             let fishFiletr = fish.filter(x => x.id === f)
                                     .map(x => x.species)
@@ -19,7 +19,7 @@ export const getFishByLake = (arr) =>{
         return fishArr;
     }
     else{
-        console.log(-1);
+        //console.log(-1);
         return "Sommething wrong";
     }   
     //console.log(fishArr);  

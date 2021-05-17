@@ -18,7 +18,7 @@ export const allNaturalLakesView = () => {
                             <p>Wide: ${lake.wide} km</p>
                             <p>Main Depth: ${lake.mainDepth} m</p>
                             <p>Max Depth: ${lake.maxDepth} m</p>                           
-                            <button class="lakes__cards__btn" class="detail">${lake.name} Detail</button>
+                            <button id="${lake.id}" class="lakes__cards__btn" class="detail">${lake.name} Detail</button>
                             </div>
                         `;
         count++;
@@ -33,7 +33,7 @@ export const allArtificialLakesView = () => {
     let count = 1;  
     for(let lake of lakes){
         //console.log(lake);
-        htmlArtificialLakes += `<div class="lakes__cards">
+        htmlArtificialLakes += `<div id="${lake.id}" class="lakes__cards">
                             <h3>_${count}_</h3>
                             <img class="lakes__cards__img" src="./images/lakes/artificial/${lake.name}.jpg" />                          
                             <h4>Name: ${lake.name}</h4>  
@@ -41,7 +41,7 @@ export const allArtificialLakesView = () => {
                             <p>Made on River: ${lake.river}</p>                            
                             <p>Long: ${lake.long} km</p>  
                             <p>Build: ${lake.year?lake.year:" / "} year</p>                         
-                            <button class="lakes__cards__btn" class="detail">${lake.name} Detail</button>                        
+                            <button id="${lake.id}" class="lakes__cards__btn">${lake.name} Detail</button>                        
                             </div>
                         `;
         count++;
@@ -56,7 +56,7 @@ export const allRiversView = () =>{
     let count = 1;
     for(let river of rivers){
         htmlRivers += `
-                        <div class="rivers__cards">
+                        <div id="${river.id}" class="rivers__cards">
                             <h3>_${count}_</h3>
                             <img class="rivers__cards__img" src="./images/rivers/${river.name}.jpg" />                          
                             <h4>Name: ${river.name}</h4>                          

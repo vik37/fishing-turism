@@ -10,3 +10,21 @@ button{
     box-shadow: #2deaed 10px 10px 30px inset;
     cursor: pointer;
 }
+.back{
+    margin-left: 10px;
+    background-color: rgba(131, 131, 131, 0.2);
+    box-shadow: #2deaed 1px 1px 6px inset;
+    font-weight: bolder;
+    color:$white;
+    text-shadow: 1px 1px 3px $black;
+    letter-spacing: 1.9px;
+    width: 150px;
+    padding: 8px 8px;
+    &__arrow{      
+        font-size: 1.7rem;
+        margin-right: 8px;
+    }
+    &:hover{
+        background-color: rgba(184, 63, 7,0.9);
+    }
+}
