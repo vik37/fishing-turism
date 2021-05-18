@@ -79,7 +79,7 @@ export const lakeDetailView = (id,typeOfLake) => {
                                     <section class="fish__section">                                    
                                         ${fishInWater(natural.fish)}
                                     </section>
-                                    <button type="button" class="back"><span class="back__arrow">&#8612;</span>BACK</button>
+                                    <button type="button" class="back back-lake"><span class="back__arrow">&#8612;</span>BACK</button>
                                 `;       
             //console.log(connvArtifLake);
     }
@@ -116,7 +116,7 @@ export const lakeDetailView = (id,typeOfLake) => {
                                 <section class="fish__section">                                    
                                     ${fishInWater(artificial.fish)}
                                 </section>
-                                <button type="button" class="back"><span class="back__arrow">&#8612;</span>BACK</button>
+                                <button type="button" class="back back-lake"><span class="back__arrow">&#8612;</span>BACK</button>
                             `;
     //console.log(natural);
     //console.log(artificial);
@@ -124,14 +124,15 @@ export const lakeDetailView = (id,typeOfLake) => {
 }
 //FUNCTION FOR CLICK BACK BUTTON TO RETURN IN PREVIOUS PAGE(ALL LAKES)
 export const previousLakePage = () =>{
-    let btnBack = document.querySelector('.back');
-    console.log(btnBack);
-    console.log(document.querySelector('.main-2'));
-    btnBack.addEventListener("click",(e)=>{
-        e.preventDefault();
-        document.querySelector('.main-4').style.display = 'none';
-        document.querySelector('.main-2').style.display = 'block';
-        document.querySelector('.nav').style.display = 'flex';        
+    let btnBack = document.querySelector('.back-lake');
+    //console.log(btnBack);
+    //console.log(document.querySelector('.main-2'));
+    btnBack.addEventListener("click",()=>{
+               
+            document.querySelector('.main-4').style.display = 'none';
+            document.querySelector('.main-2').style.display = 'block';
+            document.querySelector('.nav').style.display = 'flex';
+                   
     });
 };
 

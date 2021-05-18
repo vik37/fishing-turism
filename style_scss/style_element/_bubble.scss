@@ -3,48 +3,49 @@ $leftPosition:50px;
 //@for $i from 1 through 6{
     .bubble{
         position: absolute;
-        width: 20px;
-        height: 20px;
+        width: 12px;
+        height: 12px;
         border: 1px solid $black;
         //background-color: brown;
         box-shadow: rgba($color: #ffffff, $alpha: 0.9) 2px 2px 10px inset;
         left: $leftPosition;
-        bottom: -7200px;
+        bottom: 150px;
         border-radius: 50px;
         //z-index: 0;
         //&:nth-child(#{$i}){left:170px * $i};
         animation-name: bubbling-1;
-        animation-duration: 20s;
+        animation-duration: 30s;
         animation-iteration-count: infinite;
+        
         &:nth-child(2){
             left:200px;
-            bottom: -7098px;
-            width: 8px;
-            height: 8px;
+            bottom: 5px;
+            width: 21px;
+            height: 21px;
             animation-name: bubbling-2;
-            animation-duration: 20s;
+            animation-duration: 25s;
             animation-iteration-count: infinite;
         }
-        &:nth-child(3){left:300px;bottom: -7160px;
-            width: 12px;height: 12px;
+        &:nth-child(3){left:475px;bottom: 310px;
+            width: 8px;height: 8px;
             animation-name: bubbling-3;
-            animation-duration: 20s;
+            animation-duration: 25s;
             animation-iteration-count: infinite;}
-        &:nth-child(4){left:780px;width: 20px;height: 20px;
+        &:nth-child(4){left:1010px;width: 20px;height: 20px;bottom: 220px;
             animation-name: bubbling-4;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(5){left:920px;bottom: -7290px;
+        &:nth-child(5){left:1230px;bottom: 1px;
             width: 25px;height: 25px;
             animation-name: bubbling-5;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(6){left:1020px;bottom: -7180px;
+        &:nth-child(6){left:1360px;bottom: 280px;
             width: 15px;height: 15px;
             animation-name: bubbling-6;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(7){left:1080px; bottom: -7380px;
+        &:nth-child(7){left:1410px; bottom: -5px;
             width: 35px;height: 35px;
             animation-name: bubbling-7;
             animation-duration: 20s;
@@ -52,51 +53,184 @@ $leftPosition:50px;
     }
 //}
 @keyframes bubbling-1{
-    0%{opacity: 0; bottom: -7200px;}
+    0%{opacity: 0; bottom: 150px;}
     25%{opacity: 1;}
-    50%{opacity: 1;}
-    75%{opacity: 1;}
-    100%{width: 0;height:0;opacity: 0;bottom: -6790px;}
+    50%{width: 10px;height: 10px;opacity: 1;}
+    75%{ opacity: 1;}
+    100%{width: 0;height:0;opacity: 0;bottom: 670px;}
 }
 @keyframes bubbling-2{
-    0%{opacity: 0; bottom: -7098px;}
+    0%{opacity: 0; bottom: 5px;}
     25%{opacity: 1;}
     50%{opacity: 1;}
     75%{opacity: 1;}
-    100%{opacity: 0;bottom: -6790px;}
+    100%{opacity: 0;bottom: 654px;}
 }
 @keyframes bubbling-3{
-    0%{opacity: 0;bottom: -7160px}
+    0%{opacity: 0;bottom: 310px}
     25%{opacity: 1;}
     50%{opacity: 1;}
     75%{opacity: 1;}
-    100%{opacity: 0;bottom: -6790px;}
+    100%{opacity: 0;bottom: 667px;}
 }
 @keyframes bubbling-4{
-    0%{opacity: 0;bottom: -7200px;}
+    0%{opacity: 0;bottom: 180px;}
     25%{opacity: 1;}
-    50%{opacity: 1;bottom: -7020px;}
+    50%{opacity: 1;bottom: 360px;}
     75%{opacity: 1;}
-    100%{opacity: 0;bottom: -6790px;}
+    100%{opacity: 0;bottom: 627px;}
 }
 @keyframes bubbling-5{
-    0%{opacity: 0;bottom: -7290px}
-    25%{opacity: 1;bottom: -7110px;}
-    50%{opacity: 1;}
-    75%{opacity: 1;}
-    100%{opacity: 0;bottom: -6790px;}
+    0%{opacity: 0;bottom: 1px}
+    25%{opacity: 1;bottom: 285px;}
+    50%{width: 25px;height: 25px;opacity: 1;}
+    75%{width: 20px;height: 20px;opacity: 1;}
+    100%{width: 5px;height: 5px;opacity: 0;bottom: 550px;}
 }
 @keyframes bubbling-6{
-    0%{opacity: 0;bottom: -7180px}
+    0%{opacity: 0;bottom: 280px}
     25%{opacity: 1;}
     50%{opacity: 1;}
-    75%{opacity: 1;bottom: -6930px;}
-    100%{opacity: 0;bottom: -6790px;}
+    75%{opacity: 1;bottom: 385px;}
+    100%{opacity: 0;bottom: 560px;}
 }
 @keyframes bubbling-7{
-    0%{opacity: 0;bottom: -7380px}
-    25%{opacity: 1;bottom: -7110px;}
-    50%{opacity: 1;bottom: -7020px;}
+    0%{opacity: 0;bottom: -5px}
+    25%{opacity: 1;bottom: 175px;}
+    50%{opacity: 1;bottom: 320px;}
     75%{opacity: 1;}
-    100%{opacity: 0;bottom: -6790px;}
+    100%{opacity: 0;bottom: 540px;}
+}
+@media (max-width: 1300px){
+    .bubble{
+        &:nth-child(7){
+            left:1020px;
+        }
+        &:nth-child(6){
+            left:900px;
+        }
+        &:nth-child(5){
+            left:890px;
+        }
+        &:nth-child(4){
+            left:860px;
+        }
+        &:nth-child(3){
+            left:396px;
+        }
+    }
+}
+@media (max-width: 1220px){
+    .bubble{
+        &:nth-child(3){
+            left:310px;
+        }
+    }
+}
+@media (max-width: 1088px){
+    .bubble{
+        &:nth-child(7){
+            left:910px;
+        }
+        &:nth-child(6){
+            left:800px;
+        }
+        &:nth-child(5){
+            left:720px;
+        }
+        &:nth-child(4){
+            left:270px;
+        }
+        &:nth-child(3){
+            left:210px;
+        }
+    }
+}
+@media (max-width: 984px){
+    .bubble{
+        &:nth-child(7){
+            left:810px;
+        }
+        &:nth-child(6){
+            left:700px;
+        }
+        &:nth-child(5){
+            left:670px;
+        }
+         &:nth-child(4){
+            left:200px;
+         }
+         &:nth-child(3){
+             left:170px;
+        }
+    }
+    @media (max-width: 884px){
+        .bubble{
+            &:nth-child(7){
+                left:710px;
+            }
+            &:nth-child(6){
+                left:680px;
+            }
+            &:nth-child(5){
+                left:650px;
+            }
+            &:nth-child(4){
+                left:160px;
+            }
+            &:nth-child(3){
+                left:110px;
+            }
+            &:nth-child(2){
+                left:70px;
+            }
+        }
+    }
+    @media (max-width: 780px){
+        .bubble{
+            &:nth-child(7){
+                left:620px;
+            }
+            &:nth-child(6){
+                left:610px;
+            }
+            &:nth-child(5){
+                left:120px;
+            }
+            &:nth-child(4){
+                left:110px;
+            }
+            &:nth-child(3){
+                left:80px;
+            }
+            &:nth-child(2){
+                left:40px;
+            }
+        }
+    }
+    @media (max-width: 685px){
+        &:nth-child(7){
+            display: none;
+        }
+        &:nth-child(6){
+            left:270px;
+        }
+        &:nth-child(5){
+            left:100px;
+        }
+        &:nth-child(4){
+            left:95px;
+        }
+        &:nth-child(3){
+            left:78px;
+        }
+        &:nth-child(2){
+            left:40px;
+        }
+    }
+    @media (max-width: 654px){
+        .bubble{
+            display: none;
+        }
+    }
 }

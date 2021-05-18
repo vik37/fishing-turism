@@ -44,6 +44,7 @@
     font-weight: $fontWeight;
     background-color: $bg-color;
     letter-spacing: $letter-sp;
+    cursor: pointer;  
 }
 @mixin fishLarge($bg-color, $fontSize, $txtShadow, $letterSpace){
     background-color: $bg-color;

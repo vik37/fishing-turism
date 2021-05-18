@@ -44,8 +44,13 @@ export const fishDetailView = (speaces) =>{
                                     <p class="weigh--converted">Weight: ${convertedWeigh.weigh} lbs</p>
                                     <p>Clutch Size: ${fish.clutchSize.toFixed(3)} eggs</p>
                                     <p>Life span: ${fish.lifespan} year</p>
-                                </section>
+                                    <div class="fish__btn">
+                                        <button type="button" class="fish__btn__back-lakes">lakes</button>
+                                        <button type="button" class="fish__btn__back-rivers">rivers</button>
+                                    </div>                                   
+                                </section>                                
                                 ${bubble()}
-                            `;                         
+                            `;  
+                                                 
     return htmlFishDetail;                        
 }

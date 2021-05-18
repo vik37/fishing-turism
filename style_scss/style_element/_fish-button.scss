@@ -1,0 +1,33 @@
+.fish__btn{
+    &__back-lakes{
+        font-size: 0.8rem;
+        width: 80px;
+        height: 30px;
+        background-color: #6d0808;
+        color: #098209;
+        text-shadow: 1px 1px 2px $black;
+        box-shadow: #820925 1px 1px 9px inset;
+        border:2px solid $white;
+        &:hover{
+            font-size: 1rem;;
+        }
+        &:active{
+            border:4px solid $white;
+            font-size: 0.6rem;
+        }
+    }
+    &__back-rivers{
+        font-size: 0.8rem;
+        width: 80px;
+        height: 30px;
+        background-color: #0007c4;
+        color: #eff702;
+        &:hover{
+            font-size: 1rem;;
+        }
+        &:active{
+            border:4px solid $black;
+            font-size: 0.6rem;
+        }
+    }
+}

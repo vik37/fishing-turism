@@ -2,13 +2,57 @@ import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './com
 import { lakeDetailView,changeConvertedNumbers,previousLakePage} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers,previousRiverPage } from './component/river_detail_component.js';
 import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
+
+const backFromFishPageToLakesOrRivers =()=>{
+    document.querySelector('.fish__btn__back-lakes').addEventListener('click',()=>{
+        document.querySelector('.main-6').style.display = 'none';
+        document.querySelector(".main-2").style.display = 'block';
+        document.querySelector('.nav').style.display = 'flex';
+
+    });
+    document.querySelector('.fish__btn__back-rivers').addEventListener('click',()=>{
+        document.querySelector('.main-6').style.display = 'none';
+        document.querySelector(".main-3").style.display = 'block';
+        document.querySelector('.nav').style.display = 'flex';
+    });
+}
+
+const showFishDetailView = (kindOfFish) =>{
+    let fish = fishDetailView(kindOfFish);
+    document.querySelector(".main-6").innerHTML = fish;
+    document.querySelector(".main-6 .centimeter").addEventListener("change", changeConvertedFishSizeWeigh);
+    backFromFishPageToLakesOrRivers();
+}
+
+const choiseFishDetail = ()=>{
+    let fishBtns = document.querySelectorAll('.fish__li__btn');
+    let detailpages = document.querySelectorAll('.main-4,.main-5,.main-6');
+    for(let f of fishBtns){
+        //console.log(f);
+        f.addEventListener("click",(e)=>{
+            if(window.getComputedStyle(detailpages[0]).display === 'none'){
+                detailpages[1].style.display = 'none';
+                detailpages[2].style.display = 'block';
+                showFishDetailView(f.id);
+            }
+            if(window.getComputedStyle(detailpages[1]).display === 'none'){
+                detailpages[0].style.display = 'none';
+                detailpages[2].style.display = 'block';
+                showFishDetailView(f.id);
+            }
+        })
+    }
+}
+
 // FUNCTION FOR SHOW PAGE LAKE IN DETILE
 const showDetailLakeView = (id,typeOfLake) =>{
-    console.log(id);
+    //console.log(id);
     let lake = document.querySelector('.lake');
     lake.innerHTML = lakeDetailView(id,typeOfLake);
     document.querySelector('.main-4 .length').addEventListener('change',changeConvertedNumbers);
-    previousLakePage();
+    choiseFishDetail();
+    previousLakePage();   
+    
 }
 
 //FUNCTION FOR SHOW PAGE ALL LAKES 
@@ -25,8 +69,7 @@ const showAllLakesView = (num) => {
         subtitle.innerText = "ARTIFICIAL LAKES";        
         main.innerHTML = allArtificialLakesView();    
               
-    }
-    
+    }   
     //console.log(num);
 }
 //FUNCTION WITH BUTTONS FOR OPEN PAGE LAKE BY DETAIL
@@ -90,12 +133,15 @@ const showDetailRiverView = (id) =>{
     river.innerHTML = riverDetailView(id);
     document.querySelector('.main-5 .length').addEventListener('change',changeConvertedRiverNumbers);
     previousRiverPage();
+    choiseFishDetail();
+    
 }
+
 //FUNCTION WITH BUTTONS FOR OPEN PAGE RIVER BY DETAIL
 const choiceDetailRiver = ()=>{
     let riverBtn = document.querySelectorAll('.rivers__cards__btn');
     for(let i = 0;i < riverBtn.length;i++){
-        console.log(riverBtn[i]);
+        //console.log(riverBtn[i]);
         riverBtn[i].addEventListener("click",(e)=>{
             e.preventDefault();
             document.querySelector(".main-3").style.display = "none";
@@ -104,27 +150,15 @@ const choiceDetailRiver = ()=>{
             showDetailRiverView(i+1);
         });
     }
-
 }
 
 // FUNCTION FOR SHOW PAGE ALL RIVERS 
-const showAllRiversView = () =>{
-       
+const showAllRiversView = () =>{      
     let rivers = document.querySelector('.rivers');
     rivers.innerHTML = allRiversView();
     choiceDetailRiver();
 }
 
-
-
-
-
-const showFishDetailView = () =>{
-    let fish = fishDetailView("Chub");
-    document.querySelector(".main-6").innerHTML = fish;
-    document.querySelector(".main-6 .centimeter").addEventListener("change", changeConvertedFishSizeWeigh);
-}
-showFishDetailView();
 
 //FUNCTION WITH CLICKING NAVIGATION MANU
 const navigationManu = () =>{  

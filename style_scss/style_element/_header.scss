@@ -25,7 +25,7 @@ header{
         .active{
             @include anchors(18px,1.2px,#8be29e,rgba(48, 20, 44, 0.9));
             border-radius: 8px;
-            cursor:no-drop;
+            //cursor:no-drop;
         }    
     }        
     .title{
