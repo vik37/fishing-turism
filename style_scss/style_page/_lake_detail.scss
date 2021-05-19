@@ -14,7 +14,9 @@
                     display: none;
                 }
             }
-            
+            &__image{
+                align-self: center;
+            }
             & > p{
                 font-size: map-get($fontSizeParagrapg, "desktop");
                 font-weight: 700;

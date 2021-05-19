@@ -1,6 +1,10 @@
 .river__detail__image{
     @extend .lake__detail__image;
+    width: 55vw;
+    margin: 20px 60px;
     &__img{
         @extend .lake__detail__image__img;
+        width: 50vw;
+        filter: saturate(3);
     }
 }

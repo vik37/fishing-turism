@@ -17,8 +17,8 @@ header{
             @include anchors(18px,1.2px,#0013e6,rgba(230, 0, 199,0.4));
             border-radius: 10px;           
             &:hover{
-                @include anchors(17px,0.6px,$white,rgba(152, 2, 221, 0.9));
-                filter: grayscale(70%);
+                @include anchors(17px,0.6px,$white,rgba(168, 33, 231, 0.9));
+                filter: hue-rotate(1750deg);
             }
                 
         }

@@ -95,15 +95,15 @@ header .nav__navbar:hover {
   font-size: 17px;
   letter-spacing: 0.6px;
   color: #ffffff;
-  background-color: rgba(152, 2, 221, 0.9);
+  background-color: rgba(168, 33, 231, 0.9);
   font-family: cursive;
   border-right: 3px solid #000000;
   border-left: 3px solid #000000;
   margin: auto 0;
   outline: 1px dotted #000000;
   text-decoration: none;
-  -webkit-filter: grayscale(70%);
-          filter: grayscale(70%);
+  -webkit-filter: hue-rotate(1750deg);
+          filter: hue-rotate(1750deg);
 }
 
 header .nav .active {
@@ -320,15 +320,15 @@ header .nav__navbar:hover {
   font-size: 17px;
   letter-spacing: 0.6px;
   color: #ffffff;
-  background-color: rgba(152, 2, 221, 0.9);
+  background-color: rgba(168, 33, 231, 0.9);
   font-family: cursive;
   border-right: 3px solid #000000;
   border-left: 3px solid #000000;
   margin: auto 0;
   outline: 1px dotted #000000;
   text-decoration: none;
-  -webkit-filter: grayscale(70%);
-          filter: grayscale(70%);
+  -webkit-filter: hue-rotate(1750deg);
+          filter: hue-rotate(1750deg);
 }
 
 header .nav .active {
@@ -478,6 +478,17 @@ header .logo {
   outline-offset: 4px;
 }
 
+.river__detail__image {
+  width: 55vw;
+  margin: 20px 60px;
+}
+
+.river__detail__image__img {
+  width: 50vw;
+  -webkit-filter: saturate(3);
+          filter: saturate(3);
+}
+
 .description {
   width: 90vw;
   border: 1px solid black;
@@ -517,7 +528,7 @@ header .logo {
 
 .fish__section .fish__li__img {
   width: 270px;
-  height: 100px;
+  height: 150px;
   border: 2px dotted #d15a5a;
   outline: 1px solid #000000;
   outline-offset: 1px;
@@ -1162,7 +1173,6 @@ article {
 
 .main-2, .main-3 {
   display: none;
-  background-color: azure;
   padding: 0 30px;
   margin-bottom: 10px;
 }
@@ -1308,6 +1318,12 @@ article {
   display: none;
 }
 
+.main-4 .lake__detail__image, .main-4 .river__detail__image {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .main-4 .lake__detail > p, .main-4 .main-5 .river__detail > p, .main-5 .main-4 .river__detail > p {
   font-size: 1rem;
   font-weight: 700;
@@ -1342,8 +1358,27 @@ article {
       align-self: flex-end;
 }
 
+.main-5 .river__detail > p {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.9px;
+  text-decoration: underline;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.main-5 .river__detail > p::first-letter {
+  font-size: 1rem;
+  color: #000000;
+  text-shadow: none;
+}
+
 .main-5 .river__detail__long--converted {
   display: none;
+}
+
+.main-5 .river h5 {
+  font-size: 1.4rem;
 }
 
 .main-6 {
@@ -1469,11 +1504,16 @@ article {
   .lake__detail > p, .main-5 .river__detail > p {
     font-size: 0.8rem;
   }
+  .rivers__cards__btn {
+    display: block;
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 490px) {
   body {
     background-color: #000000;
+    color: #fff5e2;
   }
   header {
     padding-left: 15px;
@@ -1500,16 +1540,82 @@ article {
     display: none;
   }
   .main-2, .main-3 {
-    background-color: azure;
     padding: 0 1px;
   }
   .main-2 .lakes__cards, .main-3 .lakes__cards, .main-3 .rivers__cards {
     background-color: chartreuse;
+    color: olive;
     width: 300px;
   }
   .main-2 .lakes__cards__img, .main-3 .lakes__cards__img, .main-3 .rivers__cards__img {
     margin-left: -1px;
     width: 270px;
+  }
+  .main-4 .lake__detail__image, .main-4 .river__detail__image {
+    width: 90vw;
+  }
+  .main-4 .lake__detail__image__img, .main-4 .river__detail__image__img {
+    width: 80vw;
+  }
+  .main-4 .lake__detail > p::first-letter, .main-4 .main-5 .river__detail > p::first-letter, .main-5 .main-4 .river__detail > p::first-letter {
+    color: #ffffff;
+  }
+  .main-4 .lake .description, .main-4 .main-5 .river .description, .main-5 .main-4 .river .description {
+    border-color: #ffffff;
+  }
+  .main-4 .lake .speaces_sub, .main-4 .main-5 .river .speaces_sub, .main-5 .main-4 .river .speaces_sub {
+    padding-left: 10px;
+  }
+  .main-4 .lake .fish__section .fish__li, .main-4 .main-5 .river .fish__section .fish__li, .main-5 .main-4 .river .fish__section .fish__li {
+    width: 260px;
+  }
+  .main-4 .lake .fish__section .fish__li__img, .main-4 .main-5 .river .fish__section .fish__li__img, .main-5 .main-4 .river .fish__section .fish__li__img {
+    width: 130px;
+  }
+  .main-4 .lake .fish__section .fish__li__btn, .main-4 .main-5 .river .fish__section .fish__li__btn, .main-5 .main-4 .river .fish__section .fish__li__btn {
+    width: 130px;
+  }
+  .main-5 .river__detail__image {
+    margin-left: 10px;
+    width: 90vw;
+  }
+  .main-5 .river__detail__image__img {
+    width: 80vw;
+  }
+  .main-5 .river__detail > p::first-letter {
+    color: #ffffff;
+  }
+  .main-5 .river .description {
+    border-color: #ffffff;
+  }
+  .main-5 .river .speaces_sub {
+    padding-left: 10px;
+  }
+  .main-5 .river .fish__section .fish__li {
+    width: 260px;
+  }
+  .main-5 .river .fish__section .fish__li__img {
+    width: 130px;
+  }
+  .main-5 .river .fish__section .fish__li__btn {
+    width: 130px;
+  }
+  .main-6 .fish__detail__image {
+    width: 80vw;
+  }
+  .main-6 .fish__detail__image__img {
+    width: 70vw;
+    height: 150px;
+  }
+  .main-6 .fish__detail h5 {
+    font-size: 1.5rem;
+  }
+  .main-6 .fish__detail ol {
+    font-size: 0.7rem;
+  }
+  .main-6 .fish__detail > p {
+    font-size: 1rem;
+    color: #000000;
   }
   h6 {
     color: #ffffff;
@@ -1554,7 +1660,6 @@ article {
   }
   .lake, .main-5 .river {
     padding-left: 9px;
-    background-color: blanchedalmond;
   }
   .lake .subtitle, .main-5 .river .subtitle {
     margin-left: -10px;
@@ -1573,7 +1678,6 @@ article {
             align-items: baseline;
     font-size: 14px;
     margin: 10px auto;
-    background-color: #ffffff;
     border: none;
   }
   .lake .kilometer label .length, .main-5 .river .kilometer label .length, .lake .centimeter label .length, .main-5 .river .centimeter label .length, .centimeter .lake .kilometer label .size, .centimeter .main-5 .river .kilometer label .size, .lake .centimeter label .size, .main-5 .river .centimeter label .size {
@@ -1592,9 +1696,110 @@ article {
   .lake__detail__image__img, .river__detail__image__img {
     width: 240px;
   }
+  .lake__detail__image, .river__detail__image {
+    width: 85vw;
+  }
+  .lake__detail__image__img, .river__detail__image__img {
+    width: 70vw;
+    height: 25vh;
+  }
   .lake__detail > p, .main-5 .river__detail > p {
-    background-color: blanchedalmond;
     font-size: 0.7rem;
+  }
+  .main-4 .lake__detail, .main-4 .main-5 .river__detail, .main-5 .main-4 .river__detail {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .main-4 .lake__detail > p, .main-4 .main-5 .river__detail > p, .main-5 .main-4 .river__detail > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.4;
+  }
+  .main-4 .speaces_sub {
+    padding-left: 0;
+    letter-spacing: 0.5px;
+    font-size: 0.6rem;
+  }
+  .main-4 .fish__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-4 .fish__section .fish__li {
+    width: 220px;
+  }
+  .main-4 .fish__section .fish__li__img {
+    width: 110px;
+    height: 50px;
+    border-radius: 2px;
+  }
+  .main-4 .fish__section .fish__li__btn {
+    width: 110px;
+    height: 50px;
+    font-size: 0.6rem;
+  }
+  .main-5 .river__detail {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .main-5 .river__detail__image {
+    margin-left: 0;
+    width: 80vw;
+  }
+  .main-5 .river__detail__image__img {
+    width: 70vw;
+    height: 25vh;
+  }
+  .main-5 .river__detail > p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.4;
+    text-align: start;
+  }
+  .main-5 .speaces_sub {
+    padding-left: 0;
+    letter-spacing: 0.5px;
+    font-size: 0.6rem;
+  }
+  .main-5 .fish__section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-5 .fish__section .fish__li {
+    width: 220px;
+  }
+  .main-5 .fish__section .fish__li__img {
+    width: 110px;
+    height: 50px;
+    border-radius: 2px;
+  }
+  .main-5 .fish__section .fish__li__btn {
+    width: 110px;
+    height: 50px;
+    font-size: 0.6rem;
+  }
+  .main-6 .fish__detail .centimeter label {
+    font-size: 0.6rem;
+  }
+  .main-6 .fish__detail__image {
+    border-width: 0;
+    width: 80vw;
+  }
+  .main-6 .fish__detail__image__img {
+    width: 69vw;
+    height: 150px;
+  }
+  .main-6 .fish__detail h5 {
+    font-size: 0.9rem;
+  }
+  .main-6 .fish__detail ol {
+    font-size: 0.5rem;
+  }
+  .main-6 .fish__detail > p {
+    font-size: 0.6rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

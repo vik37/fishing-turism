@@ -7,13 +7,30 @@
         .kilometer{
             align-self: flex-end;
         }
+        
         &__detail{
             @extend .lake__detail;
+            & > p{
+                font-size: map-get($fontSizeParagrapg, "desktop");
+                font-weight: 700;
+                letter-spacing: 1.9px;
+                text-decoration: underline;
+                margin-top: 10px;
+                text-align: center;
+            }
+            & > p::first-letter{
+                font-size: 1rem;
+                color: $black;
+                text-shadow: none;
+            }
             &__long{                       
                 &--converted{
                     display: none;
                 }
             }
+        }
+        h5{
+            font-size: 1.4rem;
         }
     }
 }

@@ -43,10 +43,15 @@
             }           
         }                  
     }
+    .rivers__cards__btn{
+        display: block;
+        margin-left: 50px;
+    }
 }
 @media (max-width: 490px){
     body{
         background-color: $black;
+        color: rgb(255, 245, 226);
     }
     header{
         padding-left: 15px;
@@ -69,11 +74,11 @@
         display: none;
     }
     .main-2{
-        background-color: azure;
         padding: 0 1px;
         .lakes{
             &__cards{
                 background-color: chartreuse;
+                color: olive;
                 width: 300px;
                 &__img{
                     margin-left: -1px;
@@ -82,7 +87,101 @@
             }
         }
     }   
-      
+    .main-4{
+        .lake{
+            &__detail{              
+                &__image{
+                    width: 90vw;
+                    &__img{
+                        width: 80vw;
+                    }
+                }
+                & > p{
+                    &::first-letter{
+                        color: $white;
+                    }
+                }              
+            }
+            .description{
+                border-color: $white;
+            }
+            .speaces_sub{
+                padding-left: 10px;
+            }
+            .fish__section{
+                .fish{
+                    &__li{
+                        width: 260px;
+                        &__img{
+                            width: 130px;
+                        }
+                        &__btn{
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-5{
+        .river{
+            &__detail{              
+                &__image{
+                    margin-left: 10px;
+                    width: 90vw;
+                    &__img{
+                        width: 80vw;
+                    }
+                }
+                & > p{
+                    &::first-letter{
+                        color: $white;
+                    }
+                }
+            }
+            .description{
+                border-color: $white;
+            }
+            .speaces_sub{
+                padding-left: 10px;
+            }
+            .fish__section{
+                .fish{
+                    &__li{
+                        width: 260px;
+                        &__img{
+                            width: 130px;
+                        }
+                        &__btn{
+                            width: 130px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-6{
+        .fish__detail{
+            &__image{
+                width: 80vw;
+                &__img{
+                    width: 70vw;
+                    height: 150px;
+                }
+            }
+            h5{
+                font-size: 1.5rem;
+            }
+            ol{
+                font-size: 0.7rem;
+            }
+            & > p{
+                font-size: 1rem;
+                color: $black;
+            }
+
+        }
+    }
     h6{
         color: $white;
     }
@@ -114,7 +213,7 @@
     
     .lake{
         padding-left: 9px;
-        background-color: blanchedalmond;
+        //background-color: blanchedalmond;
         .subtitle{
             margin-left: -10px;
         }
@@ -126,7 +225,6 @@
                 align-items: baseline;
                 font-size: 14px;
                 margin: 10px auto;
-                background-color: $white;
                 border: none;
                 .length{
                     @include kilometer(12px, 600, rgba(18, 127, 243,0.2), 0.8px);
@@ -145,10 +243,124 @@
             
         }
         &__detail{
+            &__image{
+                width: 85vw;
+                &__img{
+                    width: 70vw;
+                    height: 25vh;
+                }
+            }
             & > p{
-                background-color: blanchedalmond;
+                //background-color: blanchedalmond;
                 font-size: map-get($fontSizeParagrapg, "phone");
             } 
         }       
     }   
+    .main-4{
+        .lake{
+            &__detail{
+                align-self: flex-start;
+                & > p{
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    letter-spacing: 0.4;
+                }
+            }
+        }
+        .speaces_sub{
+            padding-left: 0;
+            letter-spacing: 0.5px;
+            font-size: 0.6rem;
+        }
+        .fish__section{
+            flex-direction: column;
+            .fish{               
+                &__li{
+                    width:220px;                  
+                    &__img{
+                        width: 110px;
+                        height: 50px;
+                        border-radius: 2px;
+                    }
+                    &__btn{
+                        width: 110px;
+                        height: 50px;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }    
+    .main-5{
+        .river{
+            &__detail{
+                align-self: flex-start;
+                &__image{
+                    margin-left: 0;
+                    width: 80vw;
+                    &__img{
+                        width: 70vw;
+                        height: 25vh;
+                    }
+                }
+                & > p{
+                    font-size: 0.8rem;
+                    font-weight: 300;
+                    letter-spacing: 0.4;
+                    text-align: start;
+                }
+            }
+        }
+        .speaces_sub{
+            padding-left: 0;
+            letter-spacing: 0.5px;
+            font-size: 0.6rem;
+        }
+        .fish__section{
+            flex-direction: column;
+            .fish{              
+                &__li{
+                    width:220px;                   
+                    &__img{
+                        width: 110px;
+                        height: 50px;
+                        border-radius: 2px;
+                    }
+                    &__btn{
+                        width: 110px;
+                        height: 50px;
+                        font-size: 0.6rem;
+                    }
+                }
+            }
+        }
+    }    
+    .main-6{
+        .fish__detail{
+            .centimeter{
+                label{
+                    //display: none;
+                    font-size: 0.6rem;
+                }              
+            }
+            &__image{
+                border-width: 0;
+                width: 80vw;
+                &__img{
+                    width: 69vw;
+                    height: 150px;
+                }
+            }
+            h5{
+                font-size: 0.9rem;
+            }
+            ol{
+                font-size: 0.5rem;
+            }
+            & > p{
+                font-size: 0.6rem;
+            }
+        }
+        
+    }
 }

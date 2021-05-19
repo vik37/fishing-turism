@@ -19,7 +19,7 @@ export const convertedDeptLake = ({mainDepth, maxDepth}) =>{
 }
 //THIS FUNCTION GET OBJ. OF RIVER LENGTH, RETURN CONVERTED THIS ATTRIBUTE
 export const convertedRiverLong = ({length}) =>{
-    return {length: convertedKilometerToMile(length)};
+    return {length: convertedKilometerToMile(length).toFixed(3)};
 }
 export const convertedFishWeigh = ({weigh}) =>{
     return {weigh: convertedCentimeterToInch(weigh).toFixed(3)}

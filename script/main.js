@@ -4,16 +4,25 @@ import { riverDetailView, changeConvertedRiverNumbers,previousRiverPage } from '
 import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
 
 const backFromFishPageToLakesOrRivers =()=>{
-    document.querySelector('.fish__btn__back-lakes').addEventListener('click',()=>{
+    let navbars = document.querySelectorAll('.nav__navbar');
+    let active = document.querySelector('.active');
+    document.querySelector('.fish__btn__back-lakes').addEventListener('click',()=>{       
         document.querySelector('.main-6').style.display = 'none';
         document.querySelector(".main-2").style.display = 'block';
         document.querySelector('.nav').style.display = 'flex';
-
+       // if(navbars[1].id === 'lake'){
+            active.className = active.className.replace(" active","");
+            navbars[1].className += " active";
+       // }
     });
     document.querySelector('.fish__btn__back-rivers').addEventListener('click',()=>{
         document.querySelector('.main-6').style.display = 'none';
         document.querySelector(".main-3").style.display = 'block';
         document.querySelector('.nav').style.display = 'flex';
+        //if(navbars[2].id === 'river'){
+            active.className = active.className.replace(" active","");
+            navbars[2].className += " active";
+        //}
     });
 }
 
