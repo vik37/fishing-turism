@@ -40,7 +40,6 @@ export const changeConvertedNumbers = (e) =>{
 export const lakeDetailView = (id,typeOfLake) => {
     let htmlNaturalDetail = ``;
     let htmlArtificialDetail = ``;
-    let someNum = id?id:1;
     if(typeOfLake === "natural"){
         // get natural lake by id from naturalLakeById from water_service
         let natural = naturalLakeById(id);

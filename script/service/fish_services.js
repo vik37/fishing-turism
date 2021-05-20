@@ -1,5 +1,5 @@
 import { fish } from '../db/fish_db.js';
-
+//THIS FUNCTION GET  LAKE OR RIVER FISH ID AND RETURN FISH BY ID
 const getFishById = (id) =>{
     let fishById = fish.filter(f => f.id === id)
                            .find(f => f.id === id);
@@ -24,6 +24,7 @@ export const getFishByLake = (arr) =>{
     }   
     //console.log(fishArr);  
 }
+//THIS FUNCTION GET LAKE OR RIVER FISH SPEACES AND RETURN FISH BY SPEACES
 export const getFishBySpeaces = (speaces) =>{
     let fishSpeaces = fish.find(x => x.species === speaces);
     return fishSpeaces;

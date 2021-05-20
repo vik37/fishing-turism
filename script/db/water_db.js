@@ -380,7 +380,7 @@ export let water = {
         mouth : "Struma (Bulgaria)",
         text : "The Strumica or Strumeshnitsa is a river in Macedonia and Bulgaria. It runs through the town of "+
                 "Strumica and flows into the river Struma. "+
-                "The Strumica takes its source from the Plačkovica mountain in Radoviš municipality in North Macedonia, "+
+                "The Strumica takes its source from the Plačkovica mountain in Radoviš municipality in Macedonia, "+
                 "running south in a deep valley and then known as the Stara Reka. It then enters the Radoviš Valley and "+ 
                 "runs through the eponymous town of Radoviš. Afterwards the Strumica runs southeastwards through the "+
                 "Strumica Valley (Vasilevo, Strumica and Novo Selo municipality), passing through the town of Strumica "+

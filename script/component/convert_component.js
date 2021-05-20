@@ -12,6 +12,7 @@ export const kmToMileView = () =>{
             </div>
     `;
 }
+// THIS FUNCTION RETURN HTML VIEW FOR CHOISE CENTIMETER, KILO TO PUND, INCH OR REVERSE
 export const cmToInAndKgToLbView = () =>{
     return `
         <div class="centimeter">

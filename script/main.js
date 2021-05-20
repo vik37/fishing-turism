@@ -2,37 +2,33 @@ import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './com
 import { lakeDetailView,changeConvertedNumbers,previousLakePage} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers,previousRiverPage } from './component/river_detail_component.js';
 import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
-
+// THIS FUNC. TRIGGER THE BUTTONS ON FISH DETAIL PAGE FOR BACT TO LIST OF RIVERS OR LAKES PAGES
 const backFromFishPageToLakesOrRivers =()=>{
     let navbars = document.querySelectorAll('.nav__navbar');
     let active = document.querySelector('.active');
-    document.querySelector('.fish__btn__back-lakes').addEventListener('click',()=>{       
-        document.querySelector('.main-6').style.display = 'none';
+    document.querySelector('.fish__btn__back-lakes').addEventListener('click',()=>{              
         document.querySelector(".main-2").style.display = 'block';
         document.querySelector('.nav').style.display = 'flex';
-       // if(navbars[1].id === 'lake'){
-            active.className = active.className.replace(" active","");
-            navbars[1].className += " active";
-       // }
-    });
-    document.querySelector('.fish__btn__back-rivers').addEventListener('click',()=>{
+        active.className = active.className.replace(" active","");
+        navbars[1].className += " active";
         document.querySelector('.main-6').style.display = 'none';
-        document.querySelector(".main-3").style.display = 'block';
+    });
+    document.querySelector('.fish__btn__back-rivers').addEventListener('click',()=>{            
         document.querySelector('.nav').style.display = 'flex';
-        //if(navbars[2].id === 'river'){
-            active.className = active.className.replace(" active","");
-            navbars[2].className += " active";
-        //}
+        active.className = active.className.replace(" active","");
+        navbars[2].className += " active";
+        document.querySelector(".main-3").style.display = 'block';
+        document.querySelector('.main-6').style.display = 'none';
     });
 }
-
+// THIS FUNC. SHOW FISH DETAIL PAGE 
 const showFishDetailView = (kindOfFish) =>{
     let fish = fishDetailView(kindOfFish);
     document.querySelector(".main-6").innerHTML = fish;
     document.querySelector(".main-6 .centimeter").addEventListener("change", changeConvertedFishSizeWeigh);
     backFromFishPageToLakesOrRivers();
 }
-
+// THIS FUNC. IS BUTTONS OF FISH LIST FROM LAKE OR RIVER DETAIL PAGE AND USE FOR ENTER TO FISH DETAIL PAGE
 const choiseFishDetail = ()=>{
     let fishBtns = document.querySelectorAll('.fish__li__btn');
     let detailpages = document.querySelectorAll('.main-4,.main-5,.main-6');
@@ -71,13 +67,11 @@ const showAllLakesView = (num) => {
     
     if(num === 0){          
         subtitle.innerText = "NATURAL LAKES";
-        main.innerHTML = allNaturalLakesView(); 
-        
+        main.innerHTML = allNaturalLakesView();         
     }
     if(num === 1){            
         subtitle.innerText = "ARTIFICIAL LAKES";        
-        main.innerHTML = allArtificialLakesView();    
-              
+        main.innerHTML = allArtificialLakesView();                 
     }   
     //console.log(num);
 }
@@ -140,10 +134,9 @@ const checkRadio = () =>{
 const showDetailRiverView = (id) =>{
     let river = document.querySelector('.river');
     river.innerHTML = riverDetailView(id);
-    document.querySelector('.main-5 .length').addEventListener('change',changeConvertedRiverNumbers);
-    previousRiverPage();
+    document.querySelector('.main-5 .length').addEventListener('change',changeConvertedRiverNumbers);  
     choiseFishDetail();
-    
+    previousRiverPage();
 }
 
 //FUNCTION WITH BUTTONS FOR OPEN PAGE RIVER BY DETAIL
@@ -151,8 +144,8 @@ const choiceDetailRiver = ()=>{
     let riverBtn = document.querySelectorAll('.rivers__cards__btn');
     for(let i = 0;i < riverBtn.length;i++){
         //console.log(riverBtn[i]);
-        riverBtn[i].addEventListener("click",(e)=>{
-            e.preventDefault();
+        riverBtn[i].addEventListener("click",()=>{
+            //e.preventDefault();
             document.querySelector(".main-3").style.display = "none";
             document.querySelector(".nav").style.display = "none";
             document.querySelector('.main-5').style.display = 'block';

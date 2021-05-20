@@ -53,3 +53,9 @@
     text-shadow: $txtShadow;
     letter-spacing: $letterSpace;
 }
+@mixin bubbles($size,$bottom,$left) {
+    width: $size;
+    height: $size;
+    bottom: $bottom;
+    left: $left;
+}

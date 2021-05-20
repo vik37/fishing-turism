@@ -2,6 +2,7 @@ import { getFishBySpeaces } from '../service/fish_services.js';
 import { convertedFishWeigh, convertedFishSize} from '../helper/helper.js';
 import { cmToInAndKgToLbView } from './convert_component.js';
 import { bubble } from './bubble_component.js';
+// THIS FUNCTION IS TRIGGER FOR SELECT LIST BETWEEN CONVERTED AND NON CONVERTED(FISH SIZE AND WEIGH)
 export const changeConvertedFishSizeWeigh = (e) =>{
     let conv = "--converted";
     if(e.target.value === "cm"){
@@ -18,7 +19,9 @@ export const changeConvertedFishSizeWeigh = (e) =>{
     }
 }
 export const fishDetailView = (speaces) =>{
+    // here we get fish by speaces from fish service
     let fish = getFishBySpeaces(speaces);
+    // this obj destructore is used to convert this property and use to show like converted number in view
     const {average, max} = fish.size;
     const {weigh} = fish;
     const convertedSize = convertedFishSize({average,max});

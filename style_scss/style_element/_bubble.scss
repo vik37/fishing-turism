@@ -1,57 +1,62 @@
-$leftPosition:50px;
-//$left-size:(100,170,240,260,360,410,430);
-//@for $i from 1 through 6{
+
     .bubble{
         position: absolute;
-        width: 12px;
-        height: 12px;
         border: 1px solid $black;
-        //background-color: brown;
         box-shadow: rgba($color: #ffffff, $alpha: 0.9) 2px 2px 10px inset;
-        left: $leftPosition;
-        bottom: 150px;
+        @include bubbles(12px,150px ,50px);
         border-radius: 50px;
-        //z-index: 0;
-        //&:nth-child(#{$i}){left:170px * $i};
         animation-name: bubbling-1;
         animation-duration: 30s;
         animation-iteration-count: infinite;
         
         &:nth-child(2){
-            left:200px;
-            bottom: 5px;
-            width: 21px;
-            height: 21px;
+            @include bubbles(21px,5px,200px);
             animation-name: bubbling-2;
             animation-duration: 25s;
             animation-iteration-count: infinite;
         }
-        &:nth-child(3){left:475px;bottom: 310px;
-            width: 8px;height: 8px;
+        &:nth-child(3){
+            @include bubbles(8px,310px,475px);
             animation-name: bubbling-3;
             animation-duration: 25s;
             animation-iteration-count: infinite;}
-        &:nth-child(4){left:1010px;width: 20px;height: 20px;bottom: 220px;
+        &:nth-child(4){
+            @include bubbles(20px,220px,1010px);
             animation-name: bubbling-4;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(5){left:1230px;bottom: 1px;
-            width: 25px;height: 25px;
+        &:nth-child(5){
+            @include bubbles(25px,1px,1230px);
             animation-name: bubbling-5;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(6){left:1360px;bottom: 280px;
-            width: 15px;height: 15px;
+        &:nth-child(6){
+            @include bubbles(15px,280px,1360px);
             animation-name: bubbling-6;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
-        &:nth-child(7){left:1410px; bottom: -5px;
-            width: 35px;height: 35px;
+        &:nth-child(7){
+            @include bubbles(35px,-5px,1310px);
             animation-name: bubbling-7;
             animation-duration: 20s;
             animation-iteration-count: infinite;}
+        &:nth-child(8){
+            @include bubbles(40px,-20px,110px);
+            animation-name: bubbling-8;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;}
+        &:nth-child(9){
+            @include bubbles(19px,185px,1060px);
+                animation-name: bubbling-9;
+                animation-duration: 20s;
+                animation-iteration-count: infinite;}
+        &:nth-child(10){
+            @include bubbles(5px,321px,1180px);
+            animation-name: bubbling-10;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;}
     }
-//}
+
 @keyframes bubbling-1{
     0%{opacity: 0; bottom: 150px;}
     25%{opacity: 1;}
@@ -101,8 +106,37 @@ $leftPosition:50px;
     75%{opacity: 1;}
     100%{opacity: 0;bottom: 540px;}
 }
-@media (max-width: 1300px){
+@keyframes bubbling-8{
+    0%{opacity: 0;bottom: -20px}
+    25%{opacity: 1;}
+    50%{opacity: 1;bottom: 250px;}
+    75%{opacity: 1;}
+    100%{opacity: 0;bottom: 630px;}
+}
+@keyframes bubbling-9{
+    0%{width: 19px;height: 19px;opacity: 0;bottom: 185px}
+    25%{width: 19px;height: 19px;opacity: 1;}
+    50%{width: 19px;height: 19px;opacity: 1;}
+    75%{width: 15px;height: 12px;opacity: 1;}
+    95%{width: 5px;height: 5px;opacity: 0.8;}
+    100%{width: 0;height: 0;opacity: 0;bottom: 590px;}
+}
+@keyframes bubbling-10{
+    0%{opacity: 0;bottom: 321px}
+    25%{opacity: 1;}
+    50%{width: 10px;height: 10px;opacity: 1;}
+    75%{width: 10px;height: 10px;opacity: 1;}
+    95%{opacity: 0.8;}
+    100%{width: 0;height: 0;opacity: 0;bottom: 595px;}
+}
+@media (max-width: 1400px){
     .bubble{
+        &:nth-child(10){
+            left:209px;
+        }
+        &:nth-child(9){
+            left:120px;
+        }
         &:nth-child(7){
             left:1020px;
         }
@@ -166,6 +200,9 @@ $leftPosition:50px;
     }
     @media (max-width: 884px){
         .bubble{
+            &:nth-child(10){
+                display: none;
+            }
             &:nth-child(7){
                 left:710px;
             }
