@@ -2,6 +2,9 @@ import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './com
 import { lakeDetailView,changeConvertedNumbers,previousLakePage} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers,previousRiverPage } from './component/river_detail_component.js';
 import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
+//window.addEventListener('load',()=>{
+
+
 // THIS FUNC. TRIGGER THE BUTTONS ON FISH DETAIL PAGE FOR BACT TO LIST OF RIVERS OR LAKES PAGES
 const backFromFishPageToLakesOrRivers =()=>{
     let navbars = document.querySelectorAll('.nav__navbar');
@@ -197,3 +200,17 @@ const navigationManu = () =>{
 }
 navigationManu();
 
+// THIS COMMENT FUNCTION IS FOR EXEMPLE FOR LONGER LASTING
+// let load=()=>{
+//     document.querySelector('.load').style.display = 'none';
+//     document.querySelector('.load-text').style.display = 'none';
+// };
+// let int = setInterval(load,14000);
+
+// console.log(int);
+//clearInterval(int);
+// EVENT LISTENER FOR LOADING ANUMATION
+window.addEventListener('load',()=>{
+    document.querySelector('.load').style.display = 'none';
+    document.querySelector('.load-text').style.display = 'none';
+});

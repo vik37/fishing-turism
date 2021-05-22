@@ -153,6 +153,129 @@ header .logo {
           filter: drop-shadow(1px 1px 10px white);
 }
 
+.load {
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-left: 10px solid #000000;
+  border-top: 10px solid rgba(0, 0, 0, 0.7);
+  border-right: 10px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation-name: loading;
+          animation-name: loading;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 1;
+  left: 720px;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.load-text {
+  display: block;
+  border: 1px solid #000000;
+  width: 120px;
+  text-align: center;
+  color: #ad2108;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #e94d4d), color-stop(50%, rgba(233, 77, 77, 0.4)));
+  background: linear-gradient(to right, #e94d4d 50%, rgba(233, 77, 77, 0.4) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  text-shadow: -1px -1px 1px #ffffff;
+  -webkit-animation-name: text-loading;
+          animation-name: text-loading;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: absolute;
+  z-index: 1;
+  left: 700px;
+  top: 200px;
+}
+
+.load-text::first-letter {
+  text-shadow: none;
+  font-size: 1rem;
+}
+
+@-webkit-keyframes text-loading {
+  from {
+    background-position: right bottom;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+@keyframes text-loading {
+  from {
+    background-position: right bottom;
+  }
+  to {
+    background-position: left bottom;
+  }
+}
+
+@media (max-width: 1024px) {
+  .load {
+    left: 410px;
+  }
+  .load-text {
+    left: 390px;
+  }
+}
+
+@media (max-width: 768px) {
+  .load {
+    left: 280px;
+  }
+  .load-text {
+    left: 260px;
+  }
+}
+
+@media (max-width: 684px) {
+  .load {
+    left: 60px;
+    width: 70px;
+    height: 70px;
+  }
+  .load-text {
+    left: 20px;
+  }
+}
+
 .radio {
   width: 30px;
   height: 30px;

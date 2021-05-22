@@ -51,8 +51,7 @@ export const riverDetailView = (id) =>{
 }
 //FUNCTION FOR CLICK BACK BUTTON TO RETURN IN PREVIOUS PAGE(ALL RIVERS)
 export const previousRiverPage = () =>{
-    let btnBack = document.querySelector('.back-river');
-    
+    let btnBack = document.querySelector('.back-river');    
     console.log(btnBack);
     console.log(document.querySelector('.main-2'));
     btnBack.addEventListener("click",()=>{       
