@@ -6,7 +6,7 @@ import { bubble } from './bubble_component.js';
 export const changeConvertedFishSizeWeigh = (e) =>{
     let conv = "--converted";
     if(e.target.value === "cm"){
-        document.querySelector(".fish__detail__large").style.display = "block";
+        document.querySelector(".fish__detail__large").style.display = "flex";
         document.querySelector(".weigh").style.display = "block";
         document.querySelector(`.fish__detail__large${conv}`).style.display = "none";
         document.querySelector(`.weigh${conv}`).style.display = "none";
@@ -32,7 +32,7 @@ export const fishDetailView = (speaces) =>{
                                     ${cmToInAndKgToLbView()}
                                     <div class="fish__detail__image">
                                         <img class="fish__detail__image__img" src="./images/fish/${fish.species}.jpg" 
-                                            alt="${fish.species}" />
+                                            alt="fish-${fish.species}" />
                                     </div>
                                     <h5>Kind: ${fish.species}</h5>
                                     <ol class="fish__detail__large">Size: 

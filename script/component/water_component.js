@@ -11,7 +11,7 @@ export const allNaturalLakesView = () => {
         //console.log(lake);
         htmlNaturalLakes += `<div class="lakes__cards">
                            <h3>_${count}_</h3>
-                            <img class="lakes__cards__img" src="./images/lakes/natural/${lake.name}.jpg" />                            
+                            <img class="lakes__cards__img" src="./images/lakes/natural/${lake.name}.jpg" alt="lake-${lake.name}" />                            
                             <h4>Name: ${lake.name}</h4>
                             <p>Type: ${lake.type}</p>
                             <p>Long: ${lake.long} km</p>
@@ -35,7 +35,7 @@ export const allArtificialLakesView = () => {
         //console.log(lake);
         htmlArtificialLakes += `<div id="${lake.id}" class="lakes__cards">
                             <h3>_${count}_</h3>
-                            <img class="lakes__cards__img" src="./images/lakes/artificial/${lake.name}.jpg" />                          
+                            <img class="lakes__cards__img" src="./images/lakes/artificial/${lake.name}.jpg" alt="lake-${lake.name}" />                          
                             <h4>Name: ${lake.name}</h4>  
                             <p>Type: ${lake.type}</p>                        
                             <p>Made on River: ${lake.river}</p>                            
@@ -58,7 +58,7 @@ export const allRiversView = () =>{
         htmlRivers += `
                         <div id="${river.id}" class="rivers__cards">
                             <h3>_${count}_</h3>
-                            <img class="rivers__cards__img" src="./images/rivers/${river.name}.jpg" />                          
+                            <img class="rivers__cards__img" src="./images/rivers/${river.name}.jpg" alt="river-${river.name}" />                          
                             <h4>Name: ${river.name}</h4>                          
                             <p>Length: ${river.length} km</p>
                             <p>Source: ${river.source}</p> 

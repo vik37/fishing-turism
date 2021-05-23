@@ -37,7 +37,7 @@ export let fish = [
     },         
     {
         id : 4,
-        species : "Ohris Trout",
+        species : "Ohrid Trout",
         size : 
         {
             average : 25,

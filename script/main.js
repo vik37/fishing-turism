@@ -2,7 +2,6 @@ import { allNaturalLakesView,allArtificialLakesView, allRiversView } from './com
 import { lakeDetailView,changeConvertedNumbers,previousLakePage} from './component/lake_detail_component.js';
 import { riverDetailView, changeConvertedRiverNumbers,previousRiverPage } from './component/river_detail_component.js';
 import { fishDetailView, changeConvertedFishSizeWeigh } from './component/fish_detail_component.js';
-//window.addEventListener('load',()=>{
 
 
 // THIS FUNC. TRIGGER THE BUTTONS ON FISH DETAIL PAGE FOR BACT TO LIST OF RIVERS OR LAKES PAGES
@@ -214,3 +213,5 @@ window.addEventListener('load',()=>{
     document.querySelector('.load').style.display = 'none';
     document.querySelector('.load-text').style.display = 'none';
 });
+
+

@@ -31,7 +31,7 @@ export const riverDetailView = (id) =>{
                                 ${kmToMileView()}                 
                                 <section class="river__detail">    
                                     <div class="river__detail__image">
-                                        <img class="river__detail__image__img" src="./images/rivers/${river.name}.jpg" />
+                                        <img class="river__detail__image__img" src="./images/rivers/${river.name}.jpg" alt="river-${river.name}" />
                                     </div>                                                                  
                                     <p>Source: ${river.source}</p>                                 
                                     <p>Mouth: ${river.mouth}</p>                                 
@@ -57,7 +57,6 @@ export const previousRiverPage = () =>{
     btnBack.addEventListener("click",()=>{       
             document.querySelector('.main-5').style.display = 'none';
             document.querySelector('.main-3').style.display = 'block';
-            document.querySelector('.nav').style.display = 'flex';
-                  
+            document.querySelector('.nav').style.display = 'flex';                
     });
 };

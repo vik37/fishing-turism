@@ -59,7 +59,7 @@ export const lakeDetailView = (id,typeOfLake) => {
                                     ${kmToMileView()}
                                     <section id="type__${natural.type}" class="lake__detail">    
                                         <div class="lake__detail__image">
-                                            <img class="lake__detail__image__img" src="./images/lakes/natural/${natural.name}.jpg" />
+                                            <img class="lake__detail__image__img" src="./images/lakes/natural/${natural.name}.jpg" alt="lake-${natural.name}" />
                                         </div>                               
                                         <h5>Type: ${natural.type}</h5>
                                         <p class="lake__detail__maind">Main Depth: ${natural.mainDepth} m</p>
@@ -100,7 +100,7 @@ export const lakeDetailView = (id,typeOfLake) => {
                                 </div>
                                 <section id="type__${artificial.type}" class="lake__detail">    
                                     <div class="lake__detail__image">
-                                        <img class="lake__detail__image__img" src="./images/lakes/artificial/${artificial.name}.jpg" />
+                                        <img class="lake__detail__image__img" src="./images/lakes/artificial/${artificial.name}.jpg" alt="lake-${artificial.name}" />
                                     </div>                               
                                     <h5>Type: ${artificial.type}</h5>
                                     <p class="lake__detail__long">Long: ${artificial.long} km</p>
